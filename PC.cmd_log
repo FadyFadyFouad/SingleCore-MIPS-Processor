@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.xst" -ofn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.syr" 
+xst -intstyle ise -ifn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.xst" -ofn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.syr" 

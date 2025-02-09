@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/xst"
+elaborate
+-ifn SignExtender.prj
+-ifmt mixed

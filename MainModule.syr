@@ -1,0 +1,1642 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: MainModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MainModule.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MainModule"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : MainModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALUPACK.vhd" in Library work.
+Architecture alupack of Entity alupack is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1.vhd" in Library work.
+Architecture behavioral of Entity mux2x1 is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/FULLADDER.vhd" in Library work.
+Architecture behavioral of Entity fulladder is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX16X1.vhd" in Library work.
+Architecture behavioral of Entity mux16x1 is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU1BIT.vhd" in Library work.
+Architecture behavioral of Entity alu1bit is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MainModulePack.vhd" in Library work.
+Architecture mainmodulepack of Entity mainmodulepack is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.vhd" in Library work.
+Entity <pc> compiled.
+Entity <pc> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd" in Library work.
+Architecture behavioral of Entity instrmemory is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/Control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALUcontrol.vhd" in Library work.
+Architecture behavioral of Entity alucontrol is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/mux32bits.vhd" in Library work.
+Architecture behavioral of Entity mux32bits is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/DataMem.vhd" in Library work.
+Architecture behavioral of Entity datamemory is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/SignExtender.vhd" in Library work.
+Architecture behavioral of Entity signextender is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1MAIN.vhd" in Library work.
+Architecture behavioral of Entity mux2x1main is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/REGISTERFILE.vhd" in Library work.
+Entity <registerfile> compiled.
+Entity <registerfile> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MainModule.vhd" in Library work.
+Entity <mainmodule> compiled.
+Entity <mainmodule> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MainModule> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <PC> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <INSTRMEMORY> in library <work> (architecture <behavioral>) with generics.
+	addresssize = 32
+	words = 64
+	wordsize = 32
+
+Analyzing hierarchy for entity <Control> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALUcontrol> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mux32bits> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DATAMEMORY> in library <work> (architecture <behavioral>) with generics.
+	addresssize = 32
+	words = 64
+	wordsize = 32
+
+Analyzing hierarchy for entity <SignExtender> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX2X1MAIN> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <REGISTERFILE> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU1BIT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX2X1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX16X1> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MainModule> in library <work> (Architecture <behavioral>).
+Entity <MainModule> analyzed. Unit <MainModule> generated.
+
+Analyzing Entity <PC> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.vhd" line 30: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <inadd>, <instruction>, <branch>, <oflag>, <jump>, <START>
+Entity <PC> analyzed. Unit <PC> generated.
+
+Analyzing generic Entity <INSTRMEMORY> in library <work> (Architecture <behavioral>).
+	addresssize = 32
+	words = 64
+	wordsize = 32
+WARNING:Xst:790 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd" line 74: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd" line 25: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <LoadIt>
+INFO:Xst:2679 - Register <MEMORY_0$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000000000100000000100101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_1$mux0000> in unit <INSTRMEMORY> has a constant value of 10001100000011010000000000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_2$mux0000> in unit <INSTRMEMORY> has a constant value of 10001100000110000000000000110100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_3$mux0000> in unit <INSTRMEMORY> has a constant value of 10001100000110010000000000111000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_4$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000110000101000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_5$mux0000> in unit <INSTRMEMORY> has a constant value of 10101101000010100000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_6$mux0000> in unit <INSTRMEMORY> has a constant value of 10101101000010100000000000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_7$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001101110000100100000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_8$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001001110000100100000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_9$mux0000> in unit <INSTRMEMORY> has a constant value of 10001101000010110000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_10$mux0000> in unit <INSTRMEMORY> has a constant value of 10001101000011000000000000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_11$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001011011000101000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_12$mux0000> in unit <INSTRMEMORY> has a constant value of 10101101000010100000000000001000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_13$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000110010100000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_14$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001001110000100100000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_15$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000010010000100000101010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_16$mux0000> in unit <INSTRMEMORY> has a constant value of 00010000001000000000000000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_17$mux0000> in unit <INSTRMEMORY> has a constant value of 00001000000000000000000000001001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_18$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000001000010000000100100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_19$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000011010010100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_20$mux0000> in unit <INSTRMEMORY> has a constant value of 00001000000000000000000000010110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_21$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000110001000000000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_22$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000000000100000000100100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_23$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000010000100100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_24$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001001010010100100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_25$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000100010010101000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_26$mux0000> in unit <INSTRMEMORY> has a constant value of 10001101010100000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_27$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000110000100000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_28$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000001010000100000101010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_29$mux0000> in unit <INSTRMEMORY> has a constant value of 00010100001000001111111111111001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_30$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000000001100000000100111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_31$mux0000> in unit <INSTRMEMORY> has a constant value of 00000010000110001000000000100111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_32$mux0000> in unit <INSTRMEMORY> has a constant value of 00001000000000000000000000010101 during circuit operation. The register is replaced by logic.
+Entity <INSTRMEMORY> analyzed. Unit <INSTRMEMORY> generated.
+
+Analyzing Entity <Control> in library <work> (Architecture <behavioral>).
+Entity <Control> analyzed. Unit <Control> generated.
+
+Analyzing Entity <ALUcontrol> in library <work> (Architecture <behavioral>).
+Entity <ALUcontrol> analyzed. Unit <ALUcontrol> generated.
+
+Analyzing Entity <mux32bits> in library <work> (Architecture <behavioral>).
+Entity <mux32bits> analyzed. Unit <mux32bits> generated.
+
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <ALU1BIT> in library <work> (Architecture <behavioral>).
+Entity <ALU1BIT> analyzed. Unit <ALU1BIT> generated.
+
+Analyzing Entity <MUX2X1> in library <work> (Architecture <behavioral>).
+Entity <MUX2X1> analyzed. Unit <MUX2X1> generated.
+
+Analyzing Entity <FULLADDER> in library <work> (Architecture <behavioral>).
+Entity <FULLADDER> analyzed. Unit <FULLADDER> generated.
+
+Analyzing Entity <MUX16X1> in library <work> (Architecture <behavioral>).
+Entity <MUX16X1> analyzed. Unit <MUX16X1> generated.
+
+Analyzing generic Entity <DATAMEMORY> in library <work> (Architecture <behavioral>).
+	addresssize = 32
+	words = 64
+	wordsize = 32
+WARNING:Xst:819 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/DataMem.vhd" line 27: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <LoadIt>
+WARNING:Xst:790 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/DataMem.vhd" line 61: Index value(s) does not match array range, simulation mismatch.
+Entity <DATAMEMORY> analyzed. Unit <DATAMEMORY> generated.
+
+Analyzing Entity <SignExtender> in library <work> (Architecture <behavioral>).
+Entity <SignExtender> analyzed. Unit <SignExtender> generated.
+
+Analyzing Entity <MUX2X1MAIN> in library <work> (Architecture <behavioral>).
+Entity <MUX2X1MAIN> analyzed. Unit <MUX2X1MAIN> generated.
+
+Analyzing Entity <REGISTERFILE> in library <work> (Architecture <behavioral>).
+Entity <REGISTERFILE> analyzed. Unit <REGISTERFILE> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <PC>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <instruction<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <outputext<31:30>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <instructionbeq> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit adder for signal <outputalu>.
+    Found 32-bit adder for signal <outputsada>.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+Unit <PC> synthesized.
+
+
+Synthesizing Unit <INSTRMEMORY>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd".
+WARNING:Xst:647 - Input <ADDRESS<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LoadIt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <MEMORY<0:32>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <MEMORY<33:63>> is used but never assigned. Tied to default value.
+    Found 64x32-bit ROM for signal <DATA$mux0000> created at line 74.
+    Found 32-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <INSTRMEMORY> synthesized.
+
+
+Synthesizing Unit <Control>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/Control.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <Branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 2-bit latch for signal <ALUop>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemRead>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemToReg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <MemWrite>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <Jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <RegDst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <ALUsrc>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <Control> synthesized.
+
+
+Synthesizing Unit <ALUcontrol>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALUcontrol.vhd".
+WARNING:Xst:647 - Input <func<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <ALUcontrol> synthesized.
+
+
+Synthesizing Unit <mux32bits>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/mux32bits.vhd".
+Unit <mux32bits> synthesized.
+
+
+Synthesizing Unit <DATAMEMORY>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/DataMem.vhd".
+WARNING:Xst:647 - Input <ADDRESS<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:736 - Found 32-bit latch for signal <Mtridata_OUTS> created at line 61. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:736 - Found 1-bit latch for signal <Mtrien_OUTS> created at line 61. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit 64-to-1 multiplexer for signal <$mux0000> created at line 61.
+    Found 2048-bit register for signal <MEMORY>.
+    Found 30-bit comparator less for signal <Mtrien_OUTS$cmp_lt0000> created at line 61.
+    Found 32-bit tristate buffer for signal <OUTS>.
+    Summary:
+	inferred   1 Comparator(s).
+	inferred  32 Tristate(s).
+Unit <DATAMEMORY> synthesized.
+
+
+Synthesizing Unit <SignExtender>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/SignExtender.vhd".
+Unit <SignExtender> synthesized.
+
+
+Synthesizing Unit <MUX2X1MAIN>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1MAIN.vhd".
+Unit <MUX2X1MAIN> synthesized.
+
+
+Synthesizing Unit <REGISTERFILE>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/REGISTERFILE.vhd".
+    Found 32-bit register for signal <data1>.
+    Found 32-bit register for signal <data2>.
+    Found 1024-bit register for signal <array_reg>.
+    Found 32-bit 32-to-1 multiplexer for signal <data1$mux0000> created at line 61.
+    Found 32-bit 32-to-1 multiplexer for signal <data2$mux0000> created at line 62.
+Unit <REGISTERFILE> synthesized.
+
+
+Synthesizing Unit <MUX2X1>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1.vhd".
+Unit <MUX2X1> synthesized.
+
+
+Synthesizing Unit <FULLADDER>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/FULLADDER.vhd".
+    Found 1-bit xor3 for signal <O>.
+Unit <FULLADDER> synthesized.
+
+
+Synthesizing Unit <MUX16X1>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX16X1.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <O>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <MUX16X1> synthesized.
+
+
+Synthesizing Unit <ALU1BIT>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU1BIT.vhd".
+Unit <ALU1BIT> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.vhd".
+WARNING:Xst:647 - Input <cin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit xor2 for signal <oflag>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <ALU> synthesized.
+
+
+Synthesizing Unit <MainModule>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MainModule.vhd".
+WARNING:Xst:646 - Signal <zfla> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <useless> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
+WARNING:Xst:646 - Signal <cfla> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <address> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <MainModule> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Registers                                            : 99
+ 32-bit register                                       : 99
+# Latches                                              : 43
+ 1-bit latch                                           : 41
+ 2-bit latch                                           : 1
+ 32-bit latch                                          : 1
+# Comparators                                          : 1
+ 30-bit comparator less                                : 1
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 64-to-1 multiplexer                            : 1
+# Tristates                                            : 1
+ 32-bit tristate buffer                                : 1
+# Xors                                                 : 33
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Latches                                              : 43
+ 1-bit latch                                           : 41
+ 2-bit latch                                           : 1
+ 32-bit latch                                          : 1
+# Multiplexers                                         : 3
+ 32-bit 32-to-1 multiplexer                            : 2
+ 32-bit 64-to-1 multiplexer                            : 1
+# Xors                                                 : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DATA_30> (without init value) has a constant value of 0 in block <INSTRMEMORY>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DATA_10> in Unit <INSTRMEMORY> is equivalent to the following 4 FFs/Latches, which will be removed : <DATA_9> <DATA_8> <DATA_7> <DATA_6> 
+INFO:Xst:2261 - The FF/Latch <MemRead> in Unit <Control> is equivalent to the following FF/Latch, which will be removed : <MemToReg> 
+INFO:Xst:2261 - The FF/Latch <ALUop_1> in Unit <Control> is equivalent to the following FF/Latch, which will be removed : <RegDst> 
+INFO:Xst:2261 - The FF/Latch <ALUop_0> in Unit <Control> is equivalent to the following FF/Latch, which will be removed : <Branch> 
+WARNING:Xst:1348 - Unit DATAMEMORY is merged (output interface has tristates)
+
+Optimizing unit <MainModule> ...
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<0>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<1>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<2>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<3>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<4>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<5>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<6>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<7>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<8>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<9>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<10>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<11>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<12>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<13>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<14>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<15>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<16>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<17>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<18>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<19>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<20>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<21>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<22>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<23>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<24>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<25>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<26>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<27>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<28>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<29>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<30>
+  implementation constraint: IOB=auto	 : D1/Mtridata_OUTS<31>
+
+Optimizing unit <ALUcontrol> ...
+
+Optimizing unit <mux32bits> ...
+
+Optimizing unit <SignExtender> ...
+
+Optimizing unit <MUX2X1MAIN> ...
+
+Optimizing unit <MUX2X1> ...
+
+Optimizing unit <MUX16X1> ...
+
+Optimizing unit <INSTRMEMORY> ...
+
+Optimizing unit <Control> ...
+
+Optimizing unit <REGISTERFILE> ...
+  implementation constraint: INIT=s	 : array_reg_29_4
+  implementation constraint: INIT=s	 : array_reg_29_6
+  implementation constraint: INIT=s	 : array_reg_27_12
+  implementation constraint: INIT=r	 : array_reg_27_26
+  implementation constraint: INIT=s	 : array_reg_27_5
+  implementation constraint: INIT=s	 : array_reg_29_16
+  implementation constraint: INIT=r	 : array_reg_28_9
+  implementation constraint: INIT=s	 : array_reg_27_8
+  implementation constraint: INIT=s	 : array_reg_29_31
+  implementation constraint: INIT=s	 : array_reg_27_0
+  implementation constraint: INIT=s	 : array_reg_28_2
+  implementation constraint: INIT=s	 : array_reg_29_27
+  implementation constraint: INIT=s	 : array_reg_29_20
+  implementation constraint: INIT=s	 : array_reg_27_16
+  implementation constraint: INIT=s	 : array_reg_29_7
+  implementation constraint: INIT=r	 : array_reg_28_5
+  implementation constraint: INIT=s	 : array_reg_27_3
+  implementation constraint: INIT=r	 : array_reg_27_18
+  implementation constraint: INIT=s	 : array_reg_29_3
+  implementation constraint: INIT=s	 : array_reg_29_11
+  implementation constraint: INIT=r	 : array_reg_28_1
+  implementation constraint: INIT=s	 : array_reg_27_29
+  implementation constraint: INIT=r	 : array_reg_0_26
+  implementation constraint: INIT=r	 : array_reg_1_27
+  implementation constraint: INIT=r	 : array_reg_2_28
+  implementation constraint: INIT=s	 : array_reg_3_29
+  implementation constraint: INIT=s	 : array_reg_4_30
+  implementation constraint: INIT=r	 : array_reg_5_31
+  implementation constraint: INIT=s	 : array_reg_5_0
+  implementation constraint: INIT=s	 : array_reg_6_1
+  implementation constraint: INIT=s	 : array_reg_7_2
+  implementation constraint: INIT=s	 : array_reg_8_3
+  implementation constraint: INIT=s	 : array_reg_9_4
+  implementation constraint: INIT=s	 : array_reg_10_5
+  implementation constraint: INIT=r	 : array_reg_11_6
+  implementation constraint: INIT=s	 : array_reg_12_7
+  implementation constraint: INIT=s	 : array_reg_13_8
+  implementation constraint: INIT=s	 : array_reg_14_9
+  implementation constraint: INIT=s	 : array_reg_15_10
+  implementation constraint: INIT=r	 : array_reg_20_11
+  implementation constraint: INIT=r	 : array_reg_16_12
+  implementation constraint: INIT=r	 : array_reg_21_13
+  implementation constraint: INIT=r	 : array_reg_17_14
+  implementation constraint: INIT=r	 : array_reg_22_15
+  implementation constraint: INIT=r	 : array_reg_18_16
+  implementation constraint: INIT=s	 : array_reg_23_17
+  implementation constraint: INIT=r	 : array_reg_19_18
+  implementation constraint: INIT=s	 : array_reg_24_19
+  implementation constraint: INIT=s	 : array_reg_25_20
+  implementation constraint: INIT=s	 : array_reg_30_21
+  implementation constraint: INIT=r	 : array_reg_26_22
+  implementation constraint: INIT=s	 : array_reg_31_23
+  implementation constraint: INIT=r	 : array_reg_0_25
+  implementation constraint: INIT=r	 : array_reg_1_26
+  implementation constraint: INIT=r	 : array_reg_2_27
+  implementation constraint: INIT=s	 : array_reg_3_28
+  implementation constraint: INIT=r	 : array_reg_4_29
+  implementation constraint: INIT=s	 : array_reg_5_30
+  implementation constraint: INIT=r	 : array_reg_6_31
+  implementation constraint: INIT=r	 : array_reg_6_0
+  implementation constraint: INIT=s	 : array_reg_7_1
+  implementation constraint: INIT=r	 : array_reg_8_2
+  implementation constraint: INIT=s	 : array_reg_9_3
+  implementation constraint: INIT=r	 : array_reg_10_4
+  implementation constraint: INIT=s	 : array_reg_11_5
+  implementation constraint: INIT=s	 : array_reg_12_6
+  implementation constraint: INIT=s	 : array_reg_13_7
+  implementation constraint: INIT=r	 : array_reg_14_8
+  implementation constraint: INIT=s	 : array_reg_15_9
+  implementation constraint: INIT=s	 : array_reg_20_10
+  implementation constraint: INIT=r	 : array_reg_16_11
+  implementation constraint: INIT=s	 : array_reg_21_12
+  implementation constraint: INIT=r	 : array_reg_17_13
+  implementation constraint: INIT=s	 : array_reg_22_14
+  implementation constraint: INIT=r	 : array_reg_18_15
+  implementation constraint: INIT=s	 : array_reg_23_16
+  implementation constraint: INIT=s	 : array_reg_19_17
+  implementation constraint: INIT=r	 : array_reg_24_18
+  implementation constraint: INIT=s	 : array_reg_25_19
+  implementation constraint: INIT=r	 : array_reg_30_20
+  implementation constraint: INIT=s	 : array_reg_26_21
+  implementation constraint: INIT=s	 : array_reg_31_22
+  implementation constraint: INIT=r	 : array_reg_0_23
+  implementation constraint: INIT=s	 : array_reg_1_24
+  implementation constraint: INIT=s	 : array_reg_2_25
+  implementation constraint: INIT=r	 : array_reg_3_26
+  implementation constraint: INIT=r	 : array_reg_4_27
+  implementation constraint: INIT=s	 : array_reg_5_28
+  implementation constraint: INIT=s	 : array_reg_6_29
+  implementation constraint: INIT=s	 : array_reg_7_30
+  implementation constraint: INIT=s	 : array_reg_8_31
+  implementation constraint: INIT=r	 : array_reg_8_0
+  implementation constraint: INIT=r	 : array_reg_9_1
+  implementation constraint: INIT=r	 : array_reg_10_2
+  implementation constraint: INIT=s	 : array_reg_11_3
+  implementation constraint: INIT=r	 : array_reg_12_4
+  implementation constraint: INIT=r	 : array_reg_13_5
+  implementation constraint: INIT=s	 : array_reg_14_6
+  implementation constraint: INIT=s	 : array_reg_15_7
+  implementation constraint: INIT=r	 : array_reg_20_8
+  implementation constraint: INIT=r	 : array_reg_16_9
+  implementation constraint: INIT=s	 : array_reg_21_10
+  implementation constraint: INIT=r	 : array_reg_17_11
+  implementation constraint: INIT=r	 : array_reg_22_12
+  implementation constraint: INIT=s	 : array_reg_18_13
+  implementation constraint: INIT=s	 : array_reg_23_14
+  implementation constraint: INIT=r	 : array_reg_19_15
+  implementation constraint: INIT=r	 : array_reg_24_16
+  implementation constraint: INIT=r	 : array_reg_25_17
+  implementation constraint: INIT=s	 : array_reg_30_18
+  implementation constraint: INIT=s	 : array_reg_26_19
+  implementation constraint: INIT=s	 : array_reg_31_20
+  implementation constraint: INIT=r	 : array_reg_0_22
+  implementation constraint: INIT=r	 : array_reg_1_23
+  implementation constraint: INIT=r	 : array_reg_2_24
+  implementation constraint: INIT=s	 : array_reg_3_25
+  implementation constraint: INIT=s	 : array_reg_4_26
+  implementation constraint: INIT=r	 : array_reg_5_27
+  implementation constraint: INIT=r	 : array_reg_6_28
+  implementation constraint: INIT=s	 : array_reg_7_29
+  implementation constraint: INIT=r	 : array_reg_8_30
+  implementation constraint: INIT=s	 : array_reg_9_31
+  implementation constraint: INIT=s	 : array_reg_9_0
+  implementation constraint: INIT=s	 : array_reg_10_1
+  implementation constraint: INIT=r	 : array_reg_11_2
+  implementation constraint: INIT=s	 : array_reg_12_3
+  implementation constraint: INIT=s	 : array_reg_13_4
+  implementation constraint: INIT=s	 : array_reg_14_5
+  implementation constraint: INIT=s	 : array_reg_15_6
+  implementation constraint: INIT=r	 : array_reg_20_7
+  implementation constraint: INIT=r	 : array_reg_16_8
+  implementation constraint: INIT=r	 : array_reg_21_9
+  implementation constraint: INIT=r	 : array_reg_17_10
+  implementation constraint: INIT=r	 : array_reg_22_11
+  implementation constraint: INIT=r	 : array_reg_18_12
+  implementation constraint: INIT=s	 : array_reg_23_13
+  implementation constraint: INIT=r	 : array_reg_19_14
+  implementation constraint: INIT=s	 : array_reg_24_15
+  implementation constraint: INIT=s	 : array_reg_25_16
+  implementation constraint: INIT=s	 : array_reg_30_17
+  implementation constraint: INIT=r	 : array_reg_26_18
+  implementation constraint: INIT=s	 : array_reg_31_19
+  implementation constraint: INIT=r	 : array_reg_0_21
+  implementation constraint: INIT=r	 : array_reg_1_22
+  implementation constraint: INIT=r	 : array_reg_2_23
+  implementation constraint: INIT=s	 : array_reg_3_24
+  implementation constraint: INIT=r	 : array_reg_4_25
+  implementation constraint: INIT=s	 : array_reg_5_26
+  implementation constraint: INIT=r	 : array_reg_6_27
+  implementation constraint: INIT=s	 : array_reg_7_28
+  implementation constraint: INIT=r	 : array_reg_8_29
+  implementation constraint: INIT=r	 : array_reg_9_30
+  implementation constraint: INIT=s	 : array_reg_10_31
+  implementation constraint: INIT=r	 : array_reg_10_0
+  implementation constraint: INIT=s	 : array_reg_11_1
+  implementation constraint: INIT=s	 : array_reg_12_2
+  implementation constraint: INIT=s	 : array_reg_13_3
+  implementation constraint: INIT=r	 : array_reg_14_4
+  implementation constraint: INIT=s	 : array_reg_15_5
+  implementation constraint: INIT=s	 : array_reg_20_6
+  implementation constraint: INIT=r	 : array_reg_16_7
+  implementation constraint: INIT=s	 : array_reg_21_8
+  implementation constraint: INIT=r	 : array_reg_17_9
+  implementation constraint: INIT=s	 : array_reg_22_10
+  implementation constraint: INIT=r	 : array_reg_18_11
+  implementation constraint: INIT=s	 : array_reg_23_12
+  implementation constraint: INIT=s	 : array_reg_19_13
+  implementation constraint: INIT=r	 : array_reg_24_14
+  implementation constraint: INIT=s	 : array_reg_25_15
+  implementation constraint: INIT=r	 : array_reg_30_16
+  implementation constraint: INIT=s	 : array_reg_26_17
+  implementation constraint: INIT=s	 : array_reg_31_18
+  implementation constraint: INIT=r	 : array_reg_0_20
+  implementation constraint: INIT=r	 : array_reg_1_21
+  implementation constraint: INIT=r	 : array_reg_2_22
+  implementation constraint: INIT=r	 : array_reg_3_23
+  implementation constraint: INIT=r	 : array_reg_4_24
+  implementation constraint: INIT=r	 : array_reg_5_25
+  implementation constraint: INIT=s	 : array_reg_6_26
+  implementation constraint: INIT=r	 : array_reg_7_27
+  implementation constraint: INIT=r	 : array_reg_8_28
+  implementation constraint: INIT=r	 : array_reg_9_29
+  implementation constraint: INIT=r	 : array_reg_10_30
+  implementation constraint: INIT=s	 : array_reg_11_31
+  implementation constraint: INIT=s	 : array_reg_11_0
+  implementation constraint: INIT=r	 : array_reg_12_1
+  implementation constraint: INIT=s	 : array_reg_13_2
+  implementation constraint: INIT=s	 : array_reg_14_3
+  implementation constraint: INIT=s	 : array_reg_15_4
+  implementation constraint: INIT=r	 : array_reg_20_5
+  implementation constraint: INIT=r	 : array_reg_16_6
+  implementation constraint: INIT=r	 : array_reg_21_7
+  implementation constraint: INIT=s	 : array_reg_17_8
+  implementation constraint: INIT=s	 : array_reg_22_9
+  implementation constraint: INIT=r	 : array_reg_18_10
+  implementation constraint: INIT=r	 : array_reg_23_11
+  implementation constraint: INIT=s	 : array_reg_19_12
+  implementation constraint: INIT=r	 : array_reg_24_13
+  implementation constraint: INIT=r	 : array_reg_25_14
+  implementation constraint: INIT=s	 : array_reg_30_15
+  implementation constraint: INIT=r	 : array_reg_26_16
+  implementation constraint: INIT=s	 : array_reg_31_17
+  implementation constraint: INIT=r	 : array_reg_0_19
+  implementation constraint: INIT=s	 : array_reg_1_20
+  implementation constraint: INIT=s	 : array_reg_2_21
+  implementation constraint: INIT=r	 : array_reg_3_22
+  implementation constraint: INIT=r	 : array_reg_4_23
+  implementation constraint: INIT=s	 : array_reg_5_24
+  implementation constraint: INIT=s	 : array_reg_6_25
+  implementation constraint: INIT=s	 : array_reg_7_26
+  implementation constraint: INIT=s	 : array_reg_8_27
+  implementation constraint: INIT=s	 : array_reg_9_28
+  implementation constraint: INIT=s	 : array_reg_10_29
+  implementation constraint: INIT=r	 : array_reg_11_30
+  implementation constraint: INIT=s	 : array_reg_12_31
+  implementation constraint: INIT=r	 : array_reg_12_0
+  implementation constraint: INIT=r	 : array_reg_13_1
+  implementation constraint: INIT=s	 : array_reg_14_2
+  implementation constraint: INIT=s	 : array_reg_15_3
+  implementation constraint: INIT=r	 : array_reg_20_4
+  implementation constraint: INIT=r	 : array_reg_16_5
+  implementation constraint: INIT=s	 : array_reg_21_6
+  implementation constraint: INIT=r	 : array_reg_17_7
+  implementation constraint: INIT=r	 : array_reg_22_8
+  implementation constraint: INIT=s	 : array_reg_18_9
+  implementation constraint: INIT=s	 : array_reg_23_10
+  implementation constraint: INIT=r	 : array_reg_19_11
+  implementation constraint: INIT=r	 : array_reg_24_12
+  implementation constraint: INIT=r	 : array_reg_25_13
+  implementation constraint: INIT=s	 : array_reg_30_14
+  implementation constraint: INIT=s	 : array_reg_26_15
+  implementation constraint: INIT=s	 : array_reg_31_16
+  implementation constraint: INIT=r	 : array_reg_0_18
+  implementation constraint: INIT=r	 : array_reg_1_19
+  implementation constraint: INIT=r	 : array_reg_2_20
+  implementation constraint: INIT=s	 : array_reg_3_21
+  implementation constraint: INIT=s	 : array_reg_4_22
+  implementation constraint: INIT=r	 : array_reg_5_23
+  implementation constraint: INIT=r	 : array_reg_6_24
+  implementation constraint: INIT=s	 : array_reg_7_25
+  implementation constraint: INIT=r	 : array_reg_8_26
+  implementation constraint: INIT=s	 : array_reg_9_27
+  implementation constraint: INIT=r	 : array_reg_10_28
+  implementation constraint: INIT=s	 : array_reg_11_29
+  implementation constraint: INIT=s	 : array_reg_12_30
+  implementation constraint: INIT=s	 : array_reg_13_31
+  implementation constraint: INIT=s	 : array_reg_13_0
+  implementation constraint: INIT=s	 : array_reg_14_1
+  implementation constraint: INIT=s	 : array_reg_15_2
+  implementation constraint: INIT=r	 : array_reg_20_3
+  implementation constraint: INIT=r	 : array_reg_16_4
+  implementation constraint: INIT=r	 : array_reg_21_5
+  implementation constraint: INIT=r	 : array_reg_17_6
+  implementation constraint: INIT=r	 : array_reg_22_7
+  implementation constraint: INIT=r	 : array_reg_18_8
+  implementation constraint: INIT=s	 : array_reg_23_9
+  implementation constraint: INIT=r	 : array_reg_19_10
+  implementation constraint: INIT=s	 : array_reg_24_11
+  implementation constraint: INIT=s	 : array_reg_25_12
+  implementation constraint: INIT=s	 : array_reg_30_13
+  implementation constraint: INIT=r	 : array_reg_26_14
+  implementation constraint: INIT=s	 : array_reg_31_15
+  implementation constraint: INIT=r	 : array_reg_0_17
+  implementation constraint: INIT=r	 : array_reg_1_18
+  implementation constraint: INIT=r	 : array_reg_2_19
+  implementation constraint: INIT=s	 : array_reg_3_20
+  implementation constraint: INIT=r	 : array_reg_4_21
+  implementation constraint: INIT=s	 : array_reg_5_22
+  implementation constraint: INIT=r	 : array_reg_6_23
+  implementation constraint: INIT=s	 : array_reg_7_24
+  implementation constraint: INIT=r	 : array_reg_8_25
+  implementation constraint: INIT=r	 : array_reg_9_26
+  implementation constraint: INIT=s	 : array_reg_10_27
+  implementation constraint: INIT=s	 : array_reg_11_28
+  implementation constraint: INIT=r	 : array_reg_12_29
+  implementation constraint: INIT=s	 : array_reg_13_30
+  implementation constraint: INIT=s	 : array_reg_14_31
+  implementation constraint: INIT=r	 : array_reg_14_0
+  implementation constraint: INIT=s	 : array_reg_15_1
+  implementation constraint: INIT=s	 : array_reg_20_2
+  implementation constraint: INIT=r	 : array_reg_16_3
+  implementation constraint: INIT=s	 : array_reg_21_4
+  implementation constraint: INIT=r	 : array_reg_17_5
+  implementation constraint: INIT=s	 : array_reg_22_6
+  implementation constraint: INIT=r	 : array_reg_18_7
+  implementation constraint: INIT=s	 : array_reg_23_8
+  implementation constraint: INIT=s	 : array_reg_19_9
+  implementation constraint: INIT=r	 : array_reg_24_10
+  implementation constraint: INIT=s	 : array_reg_25_11
+  implementation constraint: INIT=r	 : array_reg_30_12
+  implementation constraint: INIT=s	 : array_reg_26_13
+  implementation constraint: INIT=s	 : array_reg_31_14
+  implementation constraint: INIT=r	 : array_reg_0_16
+  implementation constraint: INIT=r	 : array_reg_1_17
+  implementation constraint: INIT=r	 : array_reg_2_18
+  implementation constraint: INIT=r	 : array_reg_3_19
+  implementation constraint: INIT=r	 : array_reg_4_20
+  implementation constraint: INIT=r	 : array_reg_5_21
+  implementation constraint: INIT=s	 : array_reg_6_22
+  implementation constraint: INIT=r	 : array_reg_7_23
+  implementation constraint: INIT=r	 : array_reg_8_24
+  implementation constraint: INIT=r	 : array_reg_9_25
+  implementation constraint: INIT=r	 : array_reg_10_26
+  implementation constraint: INIT=s	 : array_reg_11_27
+  implementation constraint: INIT=r	 : array_reg_12_28
+  implementation constraint: INIT=r	 : array_reg_13_29
+  implementation constraint: INIT=s	 : array_reg_14_30
+  implementation constraint: INIT=s	 : array_reg_15_31
+  implementation constraint: INIT=s	 : array_reg_15_0
+  implementation constraint: INIT=r	 : array_reg_20_1
+  implementation constraint: INIT=r	 : array_reg_16_2
+  implementation constraint: INIT=r	 : array_reg_21_3
+  implementation constraint: INIT=s	 : array_reg_17_4
+  implementation constraint: INIT=s	 : array_reg_22_5
+  implementation constraint: INIT=r	 : array_reg_18_6
+  implementation constraint: INIT=r	 : array_reg_23_7
+  implementation constraint: INIT=s	 : array_reg_19_8
+  implementation constraint: INIT=r	 : array_reg_24_9
+  implementation constraint: INIT=r	 : array_reg_25_10
+  implementation constraint: INIT=s	 : array_reg_30_11
+  implementation constraint: INIT=r	 : array_reg_26_12
+  implementation constraint: INIT=s	 : array_reg_31_13
+  implementation constraint: INIT=r	 : array_reg_0_15
+  implementation constraint: INIT=s	 : array_reg_1_16
+  implementation constraint: INIT=s	 : array_reg_2_17
+  implementation constraint: INIT=r	 : array_reg_3_18
+  implementation constraint: INIT=r	 : array_reg_4_19
+  implementation constraint: INIT=s	 : array_reg_5_20
+  implementation constraint: INIT=s	 : array_reg_6_21
+  implementation constraint: INIT=s	 : array_reg_7_22
+  implementation constraint: INIT=s	 : array_reg_8_23
+  implementation constraint: INIT=s	 : array_reg_9_24
+  implementation constraint: INIT=s	 : array_reg_10_25
+  implementation constraint: INIT=r	 : array_reg_11_26
+  implementation constraint: INIT=s	 : array_reg_12_27
+  implementation constraint: INIT=s	 : array_reg_13_28
+  implementation constraint: INIT=s	 : array_reg_14_29
+  implementation constraint: INIT=s	 : array_reg_15_30
+  implementation constraint: INIT=r	 : array_reg_20_31
+  implementation constraint: INIT=r	 : array_reg_20_0
+  implementation constraint: INIT=r	 : array_reg_16_1
+  implementation constraint: INIT=s	 : array_reg_21_2
+  implementation constraint: INIT=r	 : array_reg_17_3
+  implementation constraint: INIT=r	 : array_reg_22_4
+  implementation constraint: INIT=s	 : array_reg_18_5
+  implementation constraint: INIT=s	 : array_reg_23_6
+  implementation constraint: INIT=r	 : array_reg_19_7
+  implementation constraint: INIT=r	 : array_reg_24_8
+  implementation constraint: INIT=r	 : array_reg_25_9
+  implementation constraint: INIT=s	 : array_reg_30_10
+  implementation constraint: INIT=s	 : array_reg_26_11
+  implementation constraint: INIT=s	 : array_reg_31_12
+  implementation constraint: INIT=r	 : array_reg_0_14
+  implementation constraint: INIT=r	 : array_reg_1_15
+  implementation constraint: INIT=r	 : array_reg_2_16
+  implementation constraint: INIT=s	 : array_reg_3_17
+  implementation constraint: INIT=s	 : array_reg_4_18
+  implementation constraint: INIT=r	 : array_reg_5_19
+  implementation constraint: INIT=r	 : array_reg_6_20
+  implementation constraint: INIT=s	 : array_reg_7_21
+  implementation constraint: INIT=r	 : array_reg_8_22
+  implementation constraint: INIT=s	 : array_reg_9_23
+  implementation constraint: INIT=r	 : array_reg_10_24
+  implementation constraint: INIT=s	 : array_reg_11_25
+  implementation constraint: INIT=s	 : array_reg_12_26
+  implementation constraint: INIT=s	 : array_reg_13_27
+  implementation constraint: INIT=r	 : array_reg_14_28
+  implementation constraint: INIT=s	 : array_reg_15_29
+  implementation constraint: INIT=s	 : array_reg_20_30
+  implementation constraint: INIT=r	 : array_reg_16_31
+  implementation constraint: INIT=r	 : array_reg_16_0
+  implementation constraint: INIT=r	 : array_reg_21_1
+  implementation constraint: INIT=r	 : array_reg_17_2
+  implementation constraint: INIT=r	 : array_reg_22_3
+  implementation constraint: INIT=r	 : array_reg_18_4
+  implementation constraint: INIT=s	 : array_reg_23_5
+  implementation constraint: INIT=r	 : array_reg_19_6
+  implementation constraint: INIT=s	 : array_reg_24_7
+  implementation constraint: INIT=s	 : array_reg_25_8
+  implementation constraint: INIT=s	 : array_reg_30_9
+  implementation constraint: INIT=r	 : array_reg_26_10
+  implementation constraint: INIT=s	 : array_reg_31_11
+  implementation constraint: INIT=r	 : array_reg_0_12
+  implementation constraint: INIT=r	 : array_reg_1_13
+  implementation constraint: INIT=r	 : array_reg_2_14
+  implementation constraint: INIT=r	 : array_reg_3_15
+  implementation constraint: INIT=r	 : array_reg_4_16
+  implementation constraint: INIT=r	 : array_reg_5_17
+  implementation constraint: INIT=s	 : array_reg_6_18
+  implementation constraint: INIT=r	 : array_reg_7_19
+  implementation constraint: INIT=r	 : array_reg_8_20
+  implementation constraint: INIT=r	 : array_reg_9_21
+  implementation constraint: INIT=r	 : array_reg_10_22
+  implementation constraint: INIT=s	 : array_reg_11_23
+  implementation constraint: INIT=r	 : array_reg_12_24
+  implementation constraint: INIT=r	 : array_reg_13_25
+  implementation constraint: INIT=s	 : array_reg_14_26
+  implementation constraint: INIT=s	 : array_reg_15_27
+  implementation constraint: INIT=r	 : array_reg_20_28
+  implementation constraint: INIT=r	 : array_reg_16_29
+  implementation constraint: INIT=s	 : array_reg_21_30
+  implementation constraint: INIT=r	 : array_reg_17_31
+  implementation constraint: INIT=s	 : array_reg_17_0
+  implementation constraint: INIT=s	 : array_reg_22_1
+  implementation constraint: INIT=r	 : array_reg_18_2
+  implementation constraint: INIT=r	 : array_reg_23_3
+  implementation constraint: INIT=s	 : array_reg_19_4
+  implementation constraint: INIT=r	 : array_reg_24_5
+  implementation constraint: INIT=r	 : array_reg_25_6
+  implementation constraint: INIT=s	 : array_reg_30_7
+  implementation constraint: INIT=r	 : array_reg_26_8
+  implementation constraint: INIT=s	 : array_reg_31_9
+  implementation constraint: INIT=r	 : array_reg_0_11
+  implementation constraint: INIT=s	 : array_reg_1_12
+  implementation constraint: INIT=s	 : array_reg_2_13
+  implementation constraint: INIT=r	 : array_reg_3_14
+  implementation constraint: INIT=r	 : array_reg_4_15
+  implementation constraint: INIT=s	 : array_reg_5_16
+  implementation constraint: INIT=s	 : array_reg_6_17
+  implementation constraint: INIT=s	 : array_reg_7_18
+  implementation constraint: INIT=s	 : array_reg_8_19
+  implementation constraint: INIT=s	 : array_reg_9_20
+  implementation constraint: INIT=s	 : array_reg_10_21
+  implementation constraint: INIT=r	 : array_reg_11_22
+  implementation constraint: INIT=s	 : array_reg_12_23
+  implementation constraint: INIT=s	 : array_reg_13_24
+  implementation constraint: INIT=s	 : array_reg_14_25
+  implementation constraint: INIT=s	 : array_reg_15_26
+  implementation constraint: INIT=r	 : array_reg_20_27
+  implementation constraint: INIT=r	 : array_reg_16_28
+  implementation constraint: INIT=r	 : array_reg_21_29
+  implementation constraint: INIT=r	 : array_reg_17_30
+  implementation constraint: INIT=r	 : array_reg_22_31
+  implementation constraint: INIT=r	 : array_reg_22_0
+  implementation constraint: INIT=s	 : array_reg_18_1
+  implementation constraint: INIT=s	 : array_reg_23_2
+  implementation constraint: INIT=r	 : array_reg_19_3
+  implementation constraint: INIT=r	 : array_reg_24_4
+  implementation constraint: INIT=r	 : array_reg_25_5
+  implementation constraint: INIT=s	 : array_reg_30_6
+  implementation constraint: INIT=s	 : array_reg_26_7
+  implementation constraint: INIT=s	 : array_reg_31_8
+  implementation constraint: INIT=r	 : array_reg_0_10
+  implementation constraint: INIT=r	 : array_reg_1_11
+  implementation constraint: INIT=r	 : array_reg_2_12
+  implementation constraint: INIT=s	 : array_reg_3_13
+  implementation constraint: INIT=s	 : array_reg_4_14
+  implementation constraint: INIT=r	 : array_reg_5_15
+  implementation constraint: INIT=r	 : array_reg_6_16
+  implementation constraint: INIT=s	 : array_reg_7_17
+  implementation constraint: INIT=r	 : array_reg_8_18
+  implementation constraint: INIT=s	 : array_reg_9_19
+  implementation constraint: INIT=r	 : array_reg_10_20
+  implementation constraint: INIT=s	 : array_reg_11_21
+  implementation constraint: INIT=s	 : array_reg_12_22
+  implementation constraint: INIT=s	 : array_reg_13_23
+  implementation constraint: INIT=r	 : array_reg_14_24
+  implementation constraint: INIT=s	 : array_reg_15_25
+  implementation constraint: INIT=s	 : array_reg_20_26
+  implementation constraint: INIT=r	 : array_reg_16_27
+  implementation constraint: INIT=s	 : array_reg_21_28
+  implementation constraint: INIT=r	 : array_reg_17_29
+  implementation constraint: INIT=s	 : array_reg_22_30
+  implementation constraint: INIT=r	 : array_reg_18_31
+  implementation constraint: INIT=r	 : array_reg_18_0
+  implementation constraint: INIT=s	 : array_reg_23_1
+  implementation constraint: INIT=r	 : array_reg_19_2
+  implementation constraint: INIT=s	 : array_reg_24_3
+  implementation constraint: INIT=s	 : array_reg_25_4
+  implementation constraint: INIT=s	 : array_reg_30_5
+  implementation constraint: INIT=r	 : array_reg_26_6
+  implementation constraint: INIT=s	 : array_reg_31_7
+  implementation constraint: INIT=r	 : array_reg_0_9
+  implementation constraint: INIT=r	 : array_reg_1_10
+  implementation constraint: INIT=r	 : array_reg_2_11
+  implementation constraint: INIT=s	 : array_reg_3_12
+  implementation constraint: INIT=r	 : array_reg_4_13
+  implementation constraint: INIT=s	 : array_reg_5_14
+  implementation constraint: INIT=r	 : array_reg_6_15
+  implementation constraint: INIT=s	 : array_reg_7_16
+  implementation constraint: INIT=r	 : array_reg_8_17
+  implementation constraint: INIT=r	 : array_reg_9_18
+  implementation constraint: INIT=s	 : array_reg_10_19
+  implementation constraint: INIT=s	 : array_reg_11_20
+  implementation constraint: INIT=r	 : array_reg_12_21
+  implementation constraint: INIT=s	 : array_reg_13_22
+  implementation constraint: INIT=s	 : array_reg_14_23
+  implementation constraint: INIT=s	 : array_reg_15_24
+  implementation constraint: INIT=r	 : array_reg_20_25
+  implementation constraint: INIT=r	 : array_reg_16_26
+  implementation constraint: INIT=r	 : array_reg_21_27
+  implementation constraint: INIT=s	 : array_reg_17_28
+  implementation constraint: INIT=s	 : array_reg_22_29
+  implementation constraint: INIT=r	 : array_reg_18_30
+  implementation constraint: INIT=r	 : array_reg_23_31
+  implementation constraint: INIT=s	 : array_reg_23_0
+  implementation constraint: INIT=s	 : array_reg_19_1
+  implementation constraint: INIT=r	 : array_reg_24_2
+  implementation constraint: INIT=s	 : array_reg_25_3
+  implementation constraint: INIT=r	 : array_reg_30_4
+  implementation constraint: INIT=s	 : array_reg_26_5
+  implementation constraint: INIT=s	 : array_reg_31_6
+  implementation constraint: INIT=r	 : array_reg_0_8
+  implementation constraint: INIT=r	 : array_reg_1_9
+  implementation constraint: INIT=r	 : array_reg_2_10
+  implementation constraint: INIT=r	 : array_reg_3_11
+  implementation constraint: INIT=r	 : array_reg_4_12
+  implementation constraint: INIT=r	 : array_reg_5_13
+  implementation constraint: INIT=s	 : array_reg_6_14
+  implementation constraint: INIT=r	 : array_reg_7_15
+  implementation constraint: INIT=r	 : array_reg_8_16
+  implementation constraint: INIT=r	 : array_reg_9_17
+  implementation constraint: INIT=r	 : array_reg_10_18
+  implementation constraint: INIT=s	 : array_reg_11_19
+  implementation constraint: INIT=r	 : array_reg_12_20
+  implementation constraint: INIT=r	 : array_reg_13_21
+  implementation constraint: INIT=s	 : array_reg_14_22
+  implementation constraint: INIT=s	 : array_reg_15_23
+  implementation constraint: INIT=r	 : array_reg_20_24
+  implementation constraint: INIT=r	 : array_reg_16_25
+  implementation constraint: INIT=s	 : array_reg_21_26
+  implementation constraint: INIT=r	 : array_reg_17_27
+  implementation constraint: INIT=r	 : array_reg_22_28
+  implementation constraint: INIT=s	 : array_reg_18_29
+  implementation constraint: INIT=s	 : array_reg_23_30
+  implementation constraint: INIT=r	 : array_reg_19_31
+  implementation constraint: INIT=s	 : array_reg_19_0
+  implementation constraint: INIT=r	 : array_reg_24_1
+  implementation constraint: INIT=r	 : array_reg_25_2
+  implementation constraint: INIT=s	 : array_reg_30_3
+  implementation constraint: INIT=r	 : array_reg_26_4
+  implementation constraint: INIT=s	 : array_reg_31_5
+  implementation constraint: INIT=r	 : array_reg_0_7
+  implementation constraint: INIT=s	 : array_reg_1_8
+  implementation constraint: INIT=s	 : array_reg_2_9
+  implementation constraint: INIT=r	 : array_reg_3_10
+  implementation constraint: INIT=r	 : array_reg_4_11
+  implementation constraint: INIT=s	 : array_reg_5_12
+  implementation constraint: INIT=s	 : array_reg_6_13
+  implementation constraint: INIT=s	 : array_reg_7_14
+  implementation constraint: INIT=s	 : array_reg_8_15
+  implementation constraint: INIT=s	 : array_reg_9_16
+  implementation constraint: INIT=s	 : array_reg_10_17
+  implementation constraint: INIT=r	 : array_reg_11_18
+  implementation constraint: INIT=s	 : array_reg_12_19
+  implementation constraint: INIT=s	 : array_reg_13_20
+  implementation constraint: INIT=s	 : array_reg_14_21
+  implementation constraint: INIT=s	 : array_reg_15_22
+  implementation constraint: INIT=r	 : array_reg_20_23
+  implementation constraint: INIT=r	 : array_reg_16_24
+  implementation constraint: INIT=r	 : array_reg_21_25
+  implementation constraint: INIT=r	 : array_reg_17_26
+  implementation constraint: INIT=r	 : array_reg_22_27
+  implementation constraint: INIT=r	 : array_reg_18_28
+  implementation constraint: INIT=s	 : array_reg_23_29
+  implementation constraint: INIT=r	 : array_reg_19_30
+  implementation constraint: INIT=s	 : array_reg_24_31
+  implementation constraint: INIT=r	 : array_reg_24_0
+  implementation constraint: INIT=r	 : array_reg_25_1
+  implementation constraint: INIT=s	 : array_reg_30_2
+  implementation constraint: INIT=s	 : array_reg_26_3
+  implementation constraint: INIT=s	 : array_reg_31_4
+  implementation constraint: INIT=r	 : array_reg_0_6
+  implementation constraint: INIT=r	 : array_reg_1_7
+  implementation constraint: INIT=r	 : array_reg_2_8
+  implementation constraint: INIT=s	 : array_reg_3_9
+  implementation constraint: INIT=s	 : array_reg_4_10
+  implementation constraint: INIT=r	 : array_reg_5_11
+  implementation constraint: INIT=r	 : array_reg_6_12
+  implementation constraint: INIT=s	 : array_reg_7_13
+  implementation constraint: INIT=r	 : array_reg_8_14
+  implementation constraint: INIT=s	 : array_reg_9_15
+  implementation constraint: INIT=r	 : array_reg_10_16
+  implementation constraint: INIT=s	 : array_reg_11_17
+  implementation constraint: INIT=s	 : array_reg_12_18
+  implementation constraint: INIT=s	 : array_reg_13_19
+  implementation constraint: INIT=r	 : array_reg_14_20
+  implementation constraint: INIT=s	 : array_reg_15_21
+  implementation constraint: INIT=s	 : array_reg_20_22
+  implementation constraint: INIT=r	 : array_reg_16_23
+  implementation constraint: INIT=s	 : array_reg_21_24
+  implementation constraint: INIT=r	 : array_reg_17_25
+  implementation constraint: INIT=s	 : array_reg_22_26
+  implementation constraint: INIT=r	 : array_reg_18_27
+  implementation constraint: INIT=s	 : array_reg_23_28
+  implementation constraint: INIT=s	 : array_reg_19_29
+  implementation constraint: INIT=r	 : array_reg_24_30
+  implementation constraint: INIT=s	 : array_reg_25_31
+  implementation constraint: INIT=s	 : array_reg_25_0
+  implementation constraint: INIT=s	 : array_reg_30_1
+  implementation constraint: INIT=r	 : array_reg_26_2
+  implementation constraint: INIT=s	 : array_reg_31_3
+  implementation constraint: INIT=r	 : array_reg_0_5
+  implementation constraint: INIT=r	 : array_reg_1_6
+  implementation constraint: INIT=r	 : array_reg_2_7
+  implementation constraint: INIT=s	 : array_reg_3_8
+  implementation constraint: INIT=r	 : array_reg_4_9
+  implementation constraint: INIT=s	 : array_reg_5_10
+  implementation constraint: INIT=r	 : array_reg_6_11
+  implementation constraint: INIT=s	 : array_reg_7_12
+  implementation constraint: INIT=r	 : array_reg_8_13
+  implementation constraint: INIT=r	 : array_reg_9_14
+  implementation constraint: INIT=s	 : array_reg_10_15
+  implementation constraint: INIT=s	 : array_reg_11_16
+  implementation constraint: INIT=r	 : array_reg_12_17
+  implementation constraint: INIT=s	 : array_reg_13_18
+  implementation constraint: INIT=s	 : array_reg_14_19
+  implementation constraint: INIT=s	 : array_reg_15_20
+  implementation constraint: INIT=r	 : array_reg_20_21
+  implementation constraint: INIT=r	 : array_reg_16_22
+  implementation constraint: INIT=r	 : array_reg_21_23
+  implementation constraint: INIT=s	 : array_reg_17_24
+  implementation constraint: INIT=s	 : array_reg_22_25
+  implementation constraint: INIT=r	 : array_reg_18_26
+  implementation constraint: INIT=r	 : array_reg_23_27
+  implementation constraint: INIT=s	 : array_reg_19_28
+  implementation constraint: INIT=r	 : array_reg_24_29
+  implementation constraint: INIT=r	 : array_reg_25_30
+  implementation constraint: INIT=s	 : array_reg_30_31
+  implementation constraint: INIT=r	 : array_reg_30_0
+  implementation constraint: INIT=s	 : array_reg_26_1
+  implementation constraint: INIT=s	 : array_reg_31_2
+  implementation constraint: INIT=r	 : array_reg_0_4
+  implementation constraint: INIT=r	 : array_reg_1_5
+  implementation constraint: INIT=r	 : array_reg_2_6
+  implementation constraint: INIT=r	 : array_reg_3_7
+  implementation constraint: INIT=r	 : array_reg_4_8
+  implementation constraint: INIT=r	 : array_reg_5_9
+  implementation constraint: INIT=s	 : array_reg_6_10
+  implementation constraint: INIT=r	 : array_reg_7_11
+  implementation constraint: INIT=r	 : array_reg_8_12
+  implementation constraint: INIT=r	 : array_reg_9_13
+  implementation constraint: INIT=r	 : array_reg_10_14
+  implementation constraint: INIT=s	 : array_reg_11_15
+  implementation constraint: INIT=r	 : array_reg_12_16
+  implementation constraint: INIT=r	 : array_reg_13_17
+  implementation constraint: INIT=s	 : array_reg_14_18
+  implementation constraint: INIT=s	 : array_reg_15_19
+  implementation constraint: INIT=r	 : array_reg_20_20
+  implementation constraint: INIT=r	 : array_reg_16_21
+  implementation constraint: INIT=s	 : array_reg_21_22
+  implementation constraint: INIT=r	 : array_reg_17_23
+  implementation constraint: INIT=r	 : array_reg_22_24
+  implementation constraint: INIT=s	 : array_reg_18_25
+  implementation constraint: INIT=s	 : array_reg_23_26
+  implementation constraint: INIT=r	 : array_reg_19_27
+  implementation constraint: INIT=r	 : array_reg_24_28
+  implementation constraint: INIT=r	 : array_reg_25_29
+  implementation constraint: INIT=s	 : array_reg_30_30
+  implementation constraint: INIT=s	 : array_reg_26_31
+  implementation constraint: INIT=r	 : array_reg_26_0
+  implementation constraint: INIT=s	 : array_reg_31_1
+  implementation constraint: INIT=r	 : array_reg_0_3
+  implementation constraint: INIT=s	 : array_reg_1_4
+  implementation constraint: INIT=s	 : array_reg_2_5
+  implementation constraint: INIT=r	 : array_reg_3_6
+  implementation constraint: INIT=r	 : array_reg_4_7
+  implementation constraint: INIT=s	 : array_reg_5_8
+  implementation constraint: INIT=s	 : array_reg_6_9
+  implementation constraint: INIT=s	 : array_reg_7_10
+  implementation constraint: INIT=s	 : array_reg_8_11
+  implementation constraint: INIT=s	 : array_reg_9_12
+  implementation constraint: INIT=s	 : array_reg_10_13
+  implementation constraint: INIT=r	 : array_reg_11_14
+  implementation constraint: INIT=s	 : array_reg_12_15
+  implementation constraint: INIT=s	 : array_reg_13_16
+  implementation constraint: INIT=s	 : array_reg_14_17
+  implementation constraint: INIT=s	 : array_reg_15_18
+  implementation constraint: INIT=r	 : array_reg_20_19
+  implementation constraint: INIT=r	 : array_reg_16_20
+  implementation constraint: INIT=r	 : array_reg_21_21
+  implementation constraint: INIT=r	 : array_reg_17_22
+  implementation constraint: INIT=r	 : array_reg_22_23
+  implementation constraint: INIT=r	 : array_reg_18_24
+  implementation constraint: INIT=s	 : array_reg_23_25
+  implementation constraint: INIT=r	 : array_reg_19_26
+  implementation constraint: INIT=s	 : array_reg_24_27
+  implementation constraint: INIT=s	 : array_reg_25_28
+  implementation constraint: INIT=s	 : array_reg_30_29
+  implementation constraint: INIT=r	 : array_reg_26_30
+  implementation constraint: INIT=s	 : array_reg_31_31
+  implementation constraint: INIT=s	 : array_reg_31_0
+  implementation constraint: INIT=r	 : array_reg_0_2
+  implementation constraint: INIT=r	 : array_reg_1_3
+  implementation constraint: INIT=r	 : array_reg_2_4
+  implementation constraint: INIT=s	 : array_reg_3_5
+  implementation constraint: INIT=s	 : array_reg_4_6
+  implementation constraint: INIT=r	 : array_reg_5_7
+  implementation constraint: INIT=r	 : array_reg_6_8
+  implementation constraint: INIT=s	 : array_reg_7_9
+  implementation constraint: INIT=r	 : array_reg_8_10
+  implementation constraint: INIT=s	 : array_reg_9_11
+  implementation constraint: INIT=r	 : array_reg_10_12
+  implementation constraint: INIT=s	 : array_reg_11_13
+  implementation constraint: INIT=s	 : array_reg_12_14
+  implementation constraint: INIT=s	 : array_reg_13_15
+  implementation constraint: INIT=r	 : array_reg_14_16
+  implementation constraint: INIT=s	 : array_reg_15_17
+  implementation constraint: INIT=s	 : array_reg_20_18
+  implementation constraint: INIT=r	 : array_reg_16_19
+  implementation constraint: INIT=s	 : array_reg_21_20
+  implementation constraint: INIT=r	 : array_reg_17_21
+  implementation constraint: INIT=s	 : array_reg_22_22
+  implementation constraint: INIT=r	 : array_reg_18_23
+  implementation constraint: INIT=s	 : array_reg_23_24
+  implementation constraint: INIT=s	 : array_reg_19_25
+  implementation constraint: INIT=r	 : array_reg_24_26
+  implementation constraint: INIT=s	 : array_reg_25_27
+  implementation constraint: INIT=r	 : array_reg_30_28
+  implementation constraint: INIT=s	 : array_reg_26_29
+  implementation constraint: INIT=s	 : array_reg_31_30
+  implementation constraint: INIT=r	 : array_reg_0_1
+  implementation constraint: INIT=r	 : array_reg_1_2
+  implementation constraint: INIT=r	 : array_reg_2_3
+  implementation constraint: INIT=s	 : array_reg_3_4
+  implementation constraint: INIT=r	 : array_reg_4_5
+  implementation constraint: INIT=s	 : array_reg_5_6
+  implementation constraint: INIT=r	 : array_reg_6_7
+  implementation constraint: INIT=s	 : array_reg_7_8
+  implementation constraint: INIT=r	 : array_reg_8_9
+  implementation constraint: INIT=r	 : array_reg_9_10
+  implementation constraint: INIT=s	 : array_reg_10_11
+  implementation constraint: INIT=s	 : array_reg_11_12
+  implementation constraint: INIT=r	 : array_reg_12_13
+  implementation constraint: INIT=s	 : array_reg_13_14
+  implementation constraint: INIT=s	 : array_reg_14_15
+  implementation constraint: INIT=s	 : array_reg_15_16
+  implementation constraint: INIT=r	 : array_reg_20_17
+  implementation constraint: INIT=r	 : array_reg_16_18
+  implementation constraint: INIT=r	 : array_reg_21_19
+  implementation constraint: INIT=s	 : array_reg_17_20
+  implementation constraint: INIT=s	 : array_reg_22_21
+  implementation constraint: INIT=r	 : array_reg_18_22
+  implementation constraint: INIT=r	 : array_reg_23_23
+  implementation constraint: INIT=s	 : array_reg_19_24
+  implementation constraint: INIT=r	 : array_reg_24_25
+  implementation constraint: INIT=r	 : array_reg_25_26
+  implementation constraint: INIT=s	 : array_reg_30_27
+  implementation constraint: INIT=r	 : array_reg_26_28
+  implementation constraint: INIT=s	 : array_reg_31_29
+  implementation constraint: INIT=r	 : array_reg_0_31
+  implementation constraint: INIT=r	 : array_reg_0_0
+  implementation constraint: INIT=r	 : array_reg_1_1
+  implementation constraint: INIT=r	 : array_reg_2_2
+  implementation constraint: INIT=r	 : array_reg_3_3
+  implementation constraint: INIT=r	 : array_reg_4_4
+  implementation constraint: INIT=r	 : array_reg_5_5
+  implementation constraint: INIT=s	 : array_reg_6_6
+  implementation constraint: INIT=r	 : array_reg_7_7
+  implementation constraint: INIT=r	 : array_reg_8_8
+  implementation constraint: INIT=r	 : array_reg_9_9
+  implementation constraint: INIT=r	 : array_reg_10_10
+  implementation constraint: INIT=s	 : array_reg_11_11
+  implementation constraint: INIT=r	 : array_reg_12_12
+  implementation constraint: INIT=r	 : array_reg_13_13
+  implementation constraint: INIT=s	 : array_reg_14_14
+  implementation constraint: INIT=s	 : array_reg_15_15
+  implementation constraint: INIT=r	 : array_reg_20_16
+  implementation constraint: INIT=r	 : array_reg_16_17
+  implementation constraint: INIT=s	 : array_reg_21_18
+  implementation constraint: INIT=r	 : array_reg_17_19
+  implementation constraint: INIT=r	 : array_reg_22_20
+  implementation constraint: INIT=s	 : array_reg_18_21
+  implementation constraint: INIT=s	 : array_reg_23_22
+  implementation constraint: INIT=r	 : array_reg_19_23
+  implementation constraint: INIT=r	 : array_reg_24_24
+  implementation constraint: INIT=r	 : array_reg_25_25
+  implementation constraint: INIT=s	 : array_reg_30_26
+  implementation constraint: INIT=s	 : array_reg_26_27
+  implementation constraint: INIT=s	 : array_reg_31_28
+  implementation constraint: INIT=r	 : array_reg_0_30
+  implementation constraint: INIT=r	 : array_reg_1_31
+  implementation constraint: INIT=s	 : array_reg_1_0
+  implementation constraint: INIT=s	 : array_reg_2_1
+  implementation constraint: INIT=r	 : array_reg_3_2
+  implementation constraint: INIT=r	 : array_reg_4_3
+  implementation constraint: INIT=s	 : array_reg_5_4
+  implementation constraint: INIT=s	 : array_reg_6_5
+  implementation constraint: INIT=s	 : array_reg_7_6
+  implementation constraint: INIT=s	 : array_reg_8_7
+  implementation constraint: INIT=s	 : array_reg_9_8
+  implementation constraint: INIT=s	 : array_reg_10_9
+  implementation constraint: INIT=r	 : array_reg_11_10
+  implementation constraint: INIT=s	 : array_reg_12_11
+  implementation constraint: INIT=s	 : array_reg_13_12
+  implementation constraint: INIT=s	 : array_reg_14_13
+  implementation constraint: INIT=s	 : array_reg_15_14
+  implementation constraint: INIT=r	 : array_reg_20_15
+  implementation constraint: INIT=r	 : array_reg_16_16
+  implementation constraint: INIT=r	 : array_reg_21_17
+  implementation constraint: INIT=r	 : array_reg_17_18
+  implementation constraint: INIT=r	 : array_reg_22_19
+  implementation constraint: INIT=r	 : array_reg_18_20
+  implementation constraint: INIT=s	 : array_reg_23_21
+  implementation constraint: INIT=r	 : array_reg_19_22
+  implementation constraint: INIT=s	 : array_reg_24_23
+  implementation constraint: INIT=s	 : array_reg_25_24
+  implementation constraint: INIT=s	 : array_reg_30_25
+  implementation constraint: INIT=r	 : array_reg_26_26
+  implementation constraint: INIT=s	 : array_reg_31_27
+  implementation constraint: INIT=r	 : array_reg_0_29
+  implementation constraint: INIT=r	 : array_reg_1_30
+  implementation constraint: INIT=r	 : array_reg_2_31
+  implementation constraint: INIT=r	 : array_reg_2_0
+  implementation constraint: INIT=s	 : array_reg_3_1
+  implementation constraint: INIT=s	 : array_reg_4_2
+  implementation constraint: INIT=r	 : array_reg_5_3
+  implementation constraint: INIT=r	 : array_reg_6_4
+  implementation constraint: INIT=s	 : array_reg_7_5
+  implementation constraint: INIT=r	 : array_reg_8_6
+  implementation constraint: INIT=s	 : array_reg_9_7
+  implementation constraint: INIT=r	 : array_reg_10_8
+  implementation constraint: INIT=s	 : array_reg_11_9
+  implementation constraint: INIT=s	 : array_reg_12_10
+  implementation constraint: INIT=s	 : array_reg_13_11
+  implementation constraint: INIT=r	 : array_reg_14_12
+  implementation constraint: INIT=s	 : array_reg_15_13
+  implementation constraint: INIT=s	 : array_reg_20_14
+  implementation constraint: INIT=r	 : array_reg_16_15
+  implementation constraint: INIT=s	 : array_reg_21_16
+  implementation constraint: INIT=r	 : array_reg_17_17
+  implementation constraint: INIT=s	 : array_reg_22_18
+  implementation constraint: INIT=r	 : array_reg_18_19
+  implementation constraint: INIT=s	 : array_reg_23_20
+  implementation constraint: INIT=s	 : array_reg_19_21
+  implementation constraint: INIT=r	 : array_reg_24_22
+  implementation constraint: INIT=s	 : array_reg_25_23
+  implementation constraint: INIT=r	 : array_reg_30_24
+  implementation constraint: INIT=s	 : array_reg_26_25
+  implementation constraint: INIT=s	 : array_reg_31_26
+  implementation constraint: INIT=r	 : array_reg_0_28
+  implementation constraint: INIT=r	 : array_reg_1_29
+  implementation constraint: INIT=r	 : array_reg_2_30
+  implementation constraint: INIT=r	 : array_reg_3_31
+  implementation constraint: INIT=s	 : array_reg_3_0
+  implementation constraint: INIT=r	 : array_reg_4_1
+  implementation constraint: INIT=s	 : array_reg_5_2
+  implementation constraint: INIT=r	 : array_reg_6_3
+  implementation constraint: INIT=s	 : array_reg_7_4
+  implementation constraint: INIT=r	 : array_reg_8_5
+  implementation constraint: INIT=r	 : array_reg_9_6
+  implementation constraint: INIT=s	 : array_reg_10_7
+  implementation constraint: INIT=s	 : array_reg_11_8
+  implementation constraint: INIT=r	 : array_reg_12_9
+  implementation constraint: INIT=s	 : array_reg_13_10
+  implementation constraint: INIT=s	 : array_reg_14_11
+  implementation constraint: INIT=s	 : array_reg_15_12
+  implementation constraint: INIT=r	 : array_reg_20_13
+  implementation constraint: INIT=r	 : array_reg_16_14
+  implementation constraint: INIT=r	 : array_reg_21_15
+  implementation constraint: INIT=s	 : array_reg_17_16
+  implementation constraint: INIT=s	 : array_reg_22_17
+  implementation constraint: INIT=r	 : array_reg_18_18
+  implementation constraint: INIT=r	 : array_reg_23_19
+  implementation constraint: INIT=s	 : array_reg_19_20
+  implementation constraint: INIT=r	 : array_reg_24_21
+  implementation constraint: INIT=r	 : array_reg_25_22
+  implementation constraint: INIT=s	 : array_reg_30_23
+  implementation constraint: INIT=r	 : array_reg_26_24
+  implementation constraint: INIT=s	 : array_reg_31_25
+  implementation constraint: INIT=r	 : array_reg_0_27
+  implementation constraint: INIT=s	 : array_reg_1_28
+  implementation constraint: INIT=s	 : array_reg_2_29
+  implementation constraint: INIT=r	 : array_reg_3_30
+  implementation constraint: INIT=r	 : array_reg_4_31
+  implementation constraint: INIT=r	 : array_reg_4_0
+  implementation constraint: INIT=r	 : array_reg_5_1
+  implementation constraint: INIT=s	 : array_reg_6_2
+  implementation constraint: INIT=r	 : array_reg_7_3
+  implementation constraint: INIT=r	 : array_reg_8_4
+  implementation constraint: INIT=r	 : array_reg_9_5
+  implementation constraint: INIT=r	 : array_reg_10_6
+  implementation constraint: INIT=s	 : array_reg_11_7
+  implementation constraint: INIT=r	 : array_reg_12_8
+  implementation constraint: INIT=r	 : array_reg_13_9
+  implementation constraint: INIT=s	 : array_reg_14_10
+  implementation constraint: INIT=s	 : array_reg_15_11
+  implementation constraint: INIT=r	 : array_reg_20_12
+  implementation constraint: INIT=r	 : array_reg_16_13
+  implementation constraint: INIT=s	 : array_reg_21_14
+  implementation constraint: INIT=r	 : array_reg_17_15
+  implementation constraint: INIT=r	 : array_reg_22_16
+  implementation constraint: INIT=s	 : array_reg_18_17
+  implementation constraint: INIT=s	 : array_reg_23_18
+  implementation constraint: INIT=r	 : array_reg_19_19
+  implementation constraint: INIT=r	 : array_reg_24_20
+  implementation constraint: INIT=r	 : array_reg_25_21
+  implementation constraint: INIT=s	 : array_reg_30_22
+  implementation constraint: INIT=s	 : array_reg_26_23
+  implementation constraint: INIT=s	 : array_reg_31_24
+  implementation constraint: INIT=r	 : array_reg_0_24
+  implementation constraint: INIT=r	 : array_reg_1_25
+  implementation constraint: INIT=r	 : array_reg_2_26
+  implementation constraint: INIT=r	 : array_reg_3_27
+  implementation constraint: INIT=r	 : array_reg_4_28
+  implementation constraint: INIT=r	 : array_reg_5_29
+  implementation constraint: INIT=s	 : array_reg_6_30
+  implementation constraint: INIT=r	 : array_reg_7_31
+  implementation constraint: INIT=s	 : array_reg_7_0
+  implementation constraint: INIT=r	 : array_reg_8_1
+  implementation constraint: INIT=r	 : array_reg_9_2
+  implementation constraint: INIT=s	 : array_reg_10_3
+  implementation constraint: INIT=s	 : array_reg_11_4
+  implementation constraint: INIT=r	 : array_reg_12_5
+  implementation constraint: INIT=s	 : array_reg_13_6
+  implementation constraint: INIT=s	 : array_reg_14_7
+  implementation constraint: INIT=s	 : array_reg_15_8
+  implementation constraint: INIT=r	 : array_reg_20_9
+  implementation constraint: INIT=r	 : array_reg_16_10
+  implementation constraint: INIT=r	 : array_reg_21_11
+  implementation constraint: INIT=s	 : array_reg_17_12
+  implementation constraint: INIT=s	 : array_reg_22_13
+  implementation constraint: INIT=r	 : array_reg_18_14
+  implementation constraint: INIT=r	 : array_reg_23_15
+  implementation constraint: INIT=s	 : array_reg_19_16
+  implementation constraint: INIT=r	 : array_reg_24_17
+  implementation constraint: INIT=r	 : array_reg_25_18
+  implementation constraint: INIT=s	 : array_reg_30_19
+  implementation constraint: INIT=r	 : array_reg_26_20
+  implementation constraint: INIT=s	 : array_reg_31_21
+  implementation constraint: INIT=r	 : array_reg_0_13
+  implementation constraint: INIT=r	 : array_reg_1_14
+  implementation constraint: INIT=r	 : array_reg_2_15
+  implementation constraint: INIT=s	 : array_reg_3_16
+  implementation constraint: INIT=r	 : array_reg_4_17
+  implementation constraint: INIT=s	 : array_reg_5_18
+  implementation constraint: INIT=r	 : array_reg_6_19
+  implementation constraint: INIT=s	 : array_reg_7_20
+  implementation constraint: INIT=r	 : array_reg_8_21
+  implementation constraint: INIT=r	 : array_reg_9_22
+  implementation constraint: INIT=s	 : array_reg_10_23
+  implementation constraint: INIT=s	 : array_reg_11_24
+  implementation constraint: INIT=r	 : array_reg_12_25
+  implementation constraint: INIT=s	 : array_reg_13_26
+  implementation constraint: INIT=s	 : array_reg_14_27
+  implementation constraint: INIT=s	 : array_reg_15_28
+  implementation constraint: INIT=r	 : array_reg_20_29
+  implementation constraint: INIT=r	 : array_reg_16_30
+  implementation constraint: INIT=r	 : array_reg_21_31
+  implementation constraint: INIT=s	 : array_reg_21_0
+  implementation constraint: INIT=r	 : array_reg_17_1
+  implementation constraint: INIT=s	 : array_reg_22_2
+  implementation constraint: INIT=r	 : array_reg_18_3
+  implementation constraint: INIT=s	 : array_reg_23_4
+  implementation constraint: INIT=s	 : array_reg_19_5
+  implementation constraint: INIT=r	 : array_reg_24_6
+  implementation constraint: INIT=s	 : array_reg_25_7
+  implementation constraint: INIT=r	 : array_reg_30_8
+  implementation constraint: INIT=s	 : array_reg_26_9
+  implementation constraint: INIT=s	 : array_reg_31_10
+  implementation constraint: INIT=s	 : array_reg_27_24
+  implementation constraint: INIT=r	 : array_reg_28_25
+  implementation constraint: INIT=s	 : array_reg_29_26
+  implementation constraint: INIT=r	 : array_reg_27_30
+  implementation constraint: INIT=r	 : array_reg_29_29
+  implementation constraint: INIT=r	 : array_reg_28_12
+  implementation constraint: INIT=r	 : array_reg_28_20
+  implementation constraint: INIT=s	 : array_reg_27_17
+  implementation constraint: INIT=s	 : array_reg_28_10
+  implementation constraint: INIT=s	 : array_reg_29_24
+  implementation constraint: INIT=s	 : array_reg_27_25
+  implementation constraint: INIT=s	 : array_reg_29_19
+  implementation constraint: INIT=s	 : array_reg_29_14
+  implementation constraint: INIT=r	 : array_reg_28_17
+  implementation constraint: INIT=s	 : array_reg_28_11
+  implementation constraint: INIT=s	 : array_reg_27_9
+  implementation constraint: INIT=r	 : array_reg_28_4
+  implementation constraint: INIT=r	 : array_reg_27_22
+  implementation constraint: INIT=s	 : array_reg_27_23
+  implementation constraint: INIT=r	 : array_reg_28_24
+  implementation constraint: INIT=r	 : array_reg_29_25
+  implementation constraint: INIT=r	 : array_reg_27_6
+  implementation constraint: INIT=r	 : array_reg_28_28
+  implementation constraint: INIT=r	 : array_reg_29_21
+  implementation constraint: INIT=s	 : array_reg_29_12
+  implementation constraint: INIT=s	 : array_reg_28_3
+  implementation constraint: INIT=s	 : array_reg_28_19
+  implementation constraint: INIT=s	 : array_reg_28_31
+  implementation constraint: INIT=s	 : array_reg_27_19
+  implementation constraint: INIT=r	 : array_reg_29_5
+  implementation constraint: INIT=s	 : array_reg_29_15
+  implementation constraint: INIT=r	 : array_reg_28_13
+  implementation constraint: INIT=r	 : array_reg_27_10
+  implementation constraint: INIT=s	 : array_reg_27_15
+  implementation constraint: INIT=r	 : array_reg_27_2
+  implementation constraint: INIT=s	 : array_reg_28_23
+  implementation constraint: INIT=s	 : array_reg_29_8
+  implementation constraint: INIT=s	 : array_reg_27_21
+  implementation constraint: INIT=s	 : array_reg_28_22
+  implementation constraint: INIT=s	 : array_reg_29_23
+  implementation constraint: INIT=s	 : array_reg_27_4
+  implementation constraint: INIT=s	 : array_reg_28_7
+  implementation constraint: INIT=s	 : array_reg_27_31
+  implementation constraint: INIT=s	 : array_reg_27_11
+  implementation constraint: INIT=s	 : array_reg_27_27
+  implementation constraint: INIT=s	 : array_reg_28_27
+  implementation constraint: INIT=r	 : array_reg_29_17
+  implementation constraint: INIT=s	 : array_reg_28_15
+  implementation constraint: INIT=s	 : array_reg_27_13
+  implementation constraint: INIT=s	 : array_reg_29_10
+  implementation constraint: INIT=s	 : array_reg_29_0
+  implementation constraint: INIT=r	 : array_reg_28_8
+  implementation constraint: INIT=s	 : array_reg_28_26
+  implementation constraint: INIT=r	 : array_reg_29_1
+  implementation constraint: INIT=r	 : array_reg_28_0
+  implementation constraint: INIT=s	 : array_reg_29_2
+  implementation constraint: INIT=r	 : array_reg_29_13
+  implementation constraint: INIT=s	 : array_reg_28_30
+  implementation constraint: INIT=s	 : array_reg_27_20
+  implementation constraint: INIT=r	 : array_reg_28_21
+  implementation constraint: INIT=s	 : array_reg_29_22
+  implementation constraint: INIT=s	 : array_reg_27_7
+  implementation constraint: INIT=s	 : array_reg_28_18
+  implementation constraint: INIT=s	 : array_reg_27_28
+  implementation constraint: INIT=r	 : array_reg_28_29
+  implementation constraint: INIT=s	 : array_reg_29_30
+  implementation constraint: INIT=s	 : array_reg_28_14
+  implementation constraint: INIT=s	 : array_reg_29_28
+  implementation constraint: INIT=s	 : array_reg_29_18
+  implementation constraint: INIT=r	 : array_reg_28_16
+  implementation constraint: INIT=r	 : array_reg_27_14
+  implementation constraint: INIT=r	 : array_reg_29_9
+  implementation constraint: INIT=s	 : array_reg_28_6
+  implementation constraint: INIT=s	 : array_reg_27_1
+
+Optimizing unit <FULLADDER> ...
+
+Optimizing unit <PC> ...
+
+Optimizing unit <ALU1BIT> ...
+
+Optimizing unit <ALU> ...
+WARNING:Xst:2170 - Unit I1 : the following signal(s) form a combinatorial loop: Mrom_DATA_mux0000_doA<31>17, PC1/outadd<2>10, Madd_outputalu_Mxor_Result<2>_Mxor__xor0000/Data<1>, Mrom_DATA_mux0000_doA<31>21, Mrom_DATA_mux0000_doA<31>22, Mrom_DATA_mux0000_doA<31>23, DATA_mux0000<0>, Madd_outputalu_Mxor_Result<2>_Mxor_Result/Result, Madd_outputalu_Mxor_Result<2>_Mxor__xor0000/Result, MainModule/PCOut<2>, PC1/outputsada<2>, PC1/outadd<2>9, Mrom_DATA_mux0000_doA<31>20, ADDRESS<2>, PC1/outadd<2>2, PC1/outadd<2>, PC1/inadd<2>, Mrom_DATA_mux0000_doA<31>24, PC1/outadd<2>8, PC1/Madd_outputalu_Mxor_Result<2>__xor0000, PC1/outputalu<2>.
+WARNING:Xst:2170 - Unit I1 : the following signal(s) form a combinatorial loop: PC1/outputalu<3>, Madd_outputalu_Mxor_Result<3>_Mxor__xor0000/Result, Madd_outputalu_Mxor_Result<3>_Mxor_Result/Data<0>, PC1/Madd_outputalu__or00021, PC1/outadd<3>7, DATA_mux0000<2>, PC1/outputalu<5>, PC1/inadd<3>, Madd_outputsada_Mxor_Result<3>/Result, Madd_outputalu_Mxor_Result<3>_Mxor__xor0000/Data<1>, PC1/outputsada<3>, PC1/outadd<5>, Madd_outputsada_Mxor_Result<3>/Data<1>, PC1/Madd_outputalu__or00031, PC1/outadd<3>2, MainModule/PCOut<3>, PC1/outadd<5>2, PC1/Madd_outputalu__or0003, PC1/outadd<3>9, PC1/outadd<5>8, PC1/outadd<3>8, Mrom_DATA_mux0000_doA<29>, Mrom_DATA_mux0000_doA<29>9, Mrom_DATA_mux0000_doA<29>6, MainModule/PCOut<5>, PC1/outadd<3>, Madd_outputalu_Mxor_Result<3>_Mxor_Result/Result, PC1/outadd<5>9, ADDRESS<5>, PC1/outadd<5>7, PC1/Madd_outputalu__or0002, Madd_outputalu_Mxor_Result<5>_Mxor_Result/Data<1>, PC1/Madd_outputalu_Mxor_Result<3>__xor0000, Madd_outputalu_Mxor_Result<5>_Mxor_Result/Result.
+WARNING:Xst:2170 - Unit I1 : the following signal(s) form a combinatorial loop: PC1/outadd<4>7, PC1/outputalu<4>, PC1/outadd<4>8, Madd_outputalu_Mxor_Result<4>_Mxor_Result/Data<0>, Mrom_DATA_mux0000_doA<28>, Madd_outputsada_Mxor_Result<4>/Result, ADDRESS<4>, PC1/outputsada<4>, Madd_outputalu_Mxor_Result<4>_Mxor_Result/Result, PC1/Madd_outputalu_Mxor_Result<4>__xor0000, Madd_outputsada_Mxor_Result<4>/Data<1>, Madd_outputalu_Mxor_Result<4>_Mxor__xor0000/Data<1>, Madd_outputalu_Mxor_Result<4>_Mxor__xor0000/Result, MainModule/PCOut<4>, Mrom_DATA_mux0000_doA<28>8, DATA_mux0000<3>, PC1/outadd<4>2, PC1/inadd<4>, PC1/outadd<4>, PC1/outadd<4>9.
+WARNING:Xst:2170 - Unit I1 : the following signal(s) form a combinatorial loop: MainModule/PCOut<6>, Mrom_DATA_mux0000_doA<27>33, Madd_outputalu_Mxor_Result<6>_Mxor_Result/Result, Mrom_DATA_mux0000_doA<27>27, PC1/outadd<6>2, Madd_outputalu_Mxor_Result<6>_Mxor__xor0000/Data<1>, Mrom_DATA_mux0000_doA<27>34, Madd_outputalu_Mxor_Result<6>_Mxor__xor0000/Result, Mrom_DATA_mux0000_doA<27>1, DATA_mux0000<4>, Madd_outputalu_Mxor_Result<6>_Mxor_Result/Data<0>, Madd_outputsada_Mxor_Result<6>/Data<1>, PC1/outadd<6>, PC1/outadd<6>7, Mrom_DATA_mux0000_doA<27>30, PC1/Madd_outputalu_Mxor_Result<6>__xor0000, Madd_outputsada_Mxor_Result<6>/Result, PC1/inadd<6>, PC1/outadd<6>9, Mrom_DATA_mux0000_doA<27>32, PC1/outputsada<6>, ADDRESS<6>, PC1/outadd<6>8, PC1/outputalu<6>, Mrom_DATA_mux0000_doA<27>20, Mrom_DATA_mux0000_doA<27>35, Mrom_DATA_mux0000_doA<27>36.
+WARNING:Xst:2170 - Unit I1 : the following signal(s) form a combinatorial loop: PC1/outadd<7>2, MainModule/PCOut<7>, PC1/inadd<7>, DATA_mux0000<5>, PC1/outadd<7>, Mrom_DATA_mux0000_doA<26>13, PC1/outputsada<7>, PC1/outputalu<7>, Madd_outputsada_Mxor_Result<7>/Result, PC1/Madd_outputalu_Mxor_Result<7>__xor0000, PC1/outadd<7>8, ADDRESS<7>, Madd_outputsada_Mxor_Result<7>/Data<1>, Madd_outputalu_Mxor_Result<7>_Mxor__xor0000/Data<1>, Madd_outputalu_Mxor_Result<7>_Mxor__xor0000/Result, PC1/outadd<7>9, Madd_outputalu_Mxor_Result<7>_Mxor_Result/Data<0>, Madd_outputalu_Mxor_Result<7>_Mxor_Result/Result, PC1/outadd<7>7.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<0> : the following signal(s) form a combinatorial loop: PC1/inadd<0>, PC1/outadd<0>1, PC1/outadd<0>6, Result, PC1/outadd<0>, PC1/outputalu<0>, MainModule/PCOut<0>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<31>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputalu_Mxor_Result<8>_Mxor_Result/Result, PC1/Madd_outputalu__or00181, PC1/Madd_outputalu__or00271, PC1/Madd_outputalu__or0007, PC1/Madd_outputalu__or0017, PC1/Madd_outputalu__or0013, PC1/outadd<8>8, PC1/Madd_outputalu__or00261, PC1/Madd_outputalu__or00111, PC1/Madd_outputalu_or0029_and0001, PC1/Madd_outputalu__or0010, PC1/Madd_outputalu__or00081, PC1/Madd_outputalu__or0027, Madd_outputalu_Mxor_Result<8>_Mxor__xor0000/Data<1>, PC1/Madd_outputalu__or00241, PC1/Madd_outputalu__or0022, PC1/outadd<8>2, PC1/Madd_outputalu__or0008, Data<1>, PC1/outputalu<8>, PC1/Madd_outputalu__or0016, PC1/Madd_outputalu__or00161, PC1/Madd_outputalu__or0012, PC1/Madd_outputalu__or00231, PC1/Madd_outputalu__or00191, PC1/Madd_outputalu__or0019, MainModule/PCOut<8>, PC1/outadd<8>7, PC1/outadd<8>, PC1/Madd_outputalu__or00211, PC1/Madd_outputalu__or0028, PC1/Madd_outputalu__or0014, PC1/Madd_outputalu__or00201, PC1/Madd_outputalu__or00091, PC1/Madd_outputalu__or0023, PC1/Madd_outputalu__or00151, PC1/Madd_outputalu__or00121, PC1/Madd_outputalu__or0015, PC1/Madd_outputalu__or00251, PC1/Madd_outputalu__or0018, Madd_outputsada_Mxor_Result<8>/Result, Madd_outputalu_Mxor_Result<8>_Mxor__xor0000/Result, PC1/Madd_outputalu__or0025, PC1/Madd_outputalu__or00131, PC1/inadd<8>, PC1/Madd_outputalu__or0020, PC1/Madd_outputalu_Mxor_Result<8>__xor0000, PC1/outadd<8>9, PC1/Madd_outputalu__or00141, PC1/Madd_outputalu__or00221, PC1/Madd_outputalu__or00171, PC1/Madd_outputalu__or00101, PC1/outputsada<8>, PC1/Madd_outputalu__or0026, Madd_outputsada_Mxor_Result<8>/Data<1>, PC1/Madd_outputalu__or0024, PC1/Madd_outputalu__or0029, PC1/Madd_outputalu__or00281, PC1/Madd_outputalu__or0009, PC1/Madd_outputalu__or0011, Madd_outputalu_Mxor_Result<8>_Mxor_Result/Data<0>, PC1/Madd_outputalu__or00071, PC1/Madd_outputalu__or0021, Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<31>_Mxor__xor0000 : the following signal(s) form a combinatorial loop: PC1/outputsada<31>, MainModule/PCOut<31>, Madd_outputsada_Mxor_Result<31>/Data<1>, Madd_outputsada_Mxor_Result<31>/Result, Data<1>, PC1/outadd<31>9, PC1/outadd<31>, PC1/inadd<31>, PC1/outadd<31>1, Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<30>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputsada_Mxor_Result<30>/Result, PC1/Madd_outputalu_Mxor_Result<30>__xor0000, Madd_outputalu_Mxor_Result<30>_Mxor__xor0000/Result, Data<0>, PC1/outputsada<30>, Madd_outputalu_Mxor_Result<30>_Mxor__xor0000/Data<1>, Result, PC1/inadd<30>, PC1/outadd<30>1, PC1/outadd<30>9, Madd_outputsada_Mxor_Result<30>/Data<1>, MainModule/PCOut<30>, PC1/outadd<30>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<29>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputalu_Mxor_Result<29>_Mxor__xor0000/Data<1>, Data<0>, PC1/outadd<29>, PC1/outputsada<29>, PC1/outadd<29>9, Madd_outputalu_Mxor_Result<29>_Mxor__xor0000/Result, MainModule/PCOut<29>, PC1/outadd<29>1, PC1/Madd_outputalu_Mxor_Result<29>__xor0000, PC1/inadd<29>, Madd_outputsada_Mxor_Result<29>/Data<1>, Result, Madd_outputsada_Mxor_Result<29>/Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<28>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputsada_Mxor_Result<28>/Data<1>, Madd_outputalu_Mxor_Result<28>_Mxor__xor0000/Result, PC1/outadd<28>1, Result, PC1/inadd<28>, PC1/outadd<28>9, Madd_outputsada_Mxor_Result<28>/Result, Madd_outputalu_Mxor_Result<28>_Mxor__xor0000/Data<1>, PC1/Madd_outputalu_Mxor_Result<28>__xor0000, MainModule/PCOut<28>, Data<0>, PC1/outputsada<28>, PC1/outadd<28>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<27>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/outadd<27>9, Madd_outputsada_Mxor_Result<27>/Result, PC1/outadd<27>, PC1/outputalu<27>, Madd_outputsada_Mxor_Result<27>/Data<1>, MainModule/PCOut<27>, PC1/outputsada<27>, Madd_outputalu_Mxor_Result<27>_Mxor__xor0000/Data<1>, Result, PC1/inadd<27>, PC1/outadd<27>8, PC1/outadd<27>2, Madd_outputalu_Mxor_Result<27>_Mxor__xor0000/Result, PC1/outadd<27>7, PC1/Madd_outputalu_Mxor_Result<27>__xor0000, Data<0>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<26>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/Madd_outputalu_Mxor_Result<26>__xor0000, MainModule/PCOut<26>, Madd_outputsada_Mxor_Result<26>/Result, PC1/inadd<26>, PC1/outputalu<26>, Madd_outputalu_Mxor_Result<26>_Mxor__xor0000/Result, PC1/outadd<26>8, Result, Data<0>, Madd_outputsada_Mxor_Result<26>/Data<1>, PC1/outadd<26>2, PC1/outputsada<26>, PC1/outadd<26>7, PC1/outadd<26>, PC1/outadd<26>9, Madd_outputalu_Mxor_Result<26>_Mxor__xor0000/Data<1>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<25>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputsada_Mxor_Result<25>/Data<1>, PC1/outadd<25>8, MainModule/PCOut<25>, Madd_outputalu_Mxor_Result<25>_Mxor__xor0000/Data<1>, PC1/outputalu<25>, PC1/Madd_outputalu_Mxor_Result<25>__xor0000, Data<0>, PC1/inadd<25>, Madd_outputalu_Mxor_Result<25>_Mxor__xor0000/Result, PC1/outadd<25>, Madd_outputsada_Mxor_Result<25>/Result, PC1/outadd<25>7, PC1/outadd<25>2, PC1/outputsada<25>, Result, PC1/outadd<25>9.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<24>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/outadd<24>, Data<0>, PC1/outadd<24>2, PC1/outadd<24>8, Madd_outputsada_Mxor_Result<24>/Data<1>, PC1/outadd<24>7, PC1/outputalu<24>, Madd_outputalu_Mxor_Result<24>_Mxor__xor0000/Result, Madd_outputalu_Mxor_Result<24>_Mxor__xor0000/Data<1>, PC1/inadd<24>, PC1/Madd_outputalu_Mxor_Result<24>__xor0000, Madd_outputsada_Mxor_Result<24>/Result, Result, PC1/outadd<24>9, PC1/outputsada<24>, MainModule/PCOut<24>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<23>_Mxor_Result : the following signal(s) form a combinatorial loop: Result, Madd_outputsada_Mxor_Result<23>/Result, PC1/outputsada<23>, MainModule/PCOut<23>, Madd_outputalu_Mxor_Result<23>_Mxor__xor0000/Result, PC1/outputalu<23>, Data<0>, PC1/outadd<23>2, PC1/outadd<23>7, PC1/outadd<23>8, PC1/inadd<23>, PC1/outadd<23>, Madd_outputalu_Mxor_Result<23>_Mxor__xor0000/Data<1>, PC1/Madd_outputalu_Mxor_Result<23>__xor0000, PC1/outadd<23>9, Madd_outputsada_Mxor_Result<23>/Data<1>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<22>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputalu_Mxor_Result<22>_Mxor__xor0000/Result, Madd_outputsada_Mxor_Result<22>/Data<1>, PC1/outadd<22>8, PC1/outadd<22>7, PC1/outadd<22>2, PC1/inadd<22>, MainModule/PCOut<22>, Result, PC1/outputalu<22>, Madd_outputsada_Mxor_Result<22>/Result, PC1/outadd<22>9, PC1/Madd_outputalu_Mxor_Result<22>__xor0000, PC1/outputsada<22>, Data<0>, PC1/outadd<22>, Madd_outputalu_Mxor_Result<22>_Mxor__xor0000/Data<1>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<21>_Mxor_Result : the following signal(s) form a combinatorial loop: Data<0>, Madd_outputsada_Mxor_Result<21>/Result, PC1/outadd<21>7, PC1/outputsada<21>, PC1/outadd<21>, MainModule/PCOut<21>, PC1/outputalu<21>, PC1/outadd<21>9, PC1/inadd<21>, PC1/outadd<21>8, Madd_outputalu_Mxor_Result<21>_Mxor__xor0000/Data<1>, Madd_outputalu_Mxor_Result<21>_Mxor__xor0000/Result, PC1/outadd<21>2, PC1/Madd_outputalu_Mxor_Result<21>__xor0000, Result, Madd_outputsada_Mxor_Result<21>/Data<1>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<20>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputsada_Mxor_Result<20>/Data<1>, PC1/outadd<20>9, PC1/outputalu<20>, PC1/outputsada<20>, PC1/outadd<20>2, PC1/outadd<20>, Data<0>, PC1/inadd<20>, PC1/outadd<20>8, Madd_outputalu_Mxor_Result<20>_Mxor__xor0000/Result, PC1/Madd_outputalu_Mxor_Result<20>__xor0000, Madd_outputalu_Mxor_Result<20>_Mxor__xor0000/Data<1>, Result, PC1/outadd<20>7, MainModule/PCOut<20>, Madd_outputsada_Mxor_Result<20>/Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<19>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputsada_Mxor_Result<19>/Result, MainModule/PCOut<19>, Madd_outputsada_Mxor_Result<19>/Data<1>, PC1/Madd_outputalu_Mxor_Result<19>__xor0000, PC1/outadd<19>7, Madd_outputalu_Mxor_Result<19>_Mxor__xor0000/Data<1>, PC1/outadd<19>8, Data<0>, Result, PC1/outadd<19>9, PC1/outadd<19>, PC1/outadd<19>2, PC1/outputalu<19>, Madd_outputalu_Mxor_Result<19>_Mxor__xor0000/Result, PC1/outputsada<19>, PC1/inadd<19>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<18>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputalu_Mxor_Result<18>_Mxor__xor0000/Result, PC1/outadd<18>7, Madd_outputsada_Mxor_Result<18>/Data<1>, PC1/outadd<18>, Result, PC1/Madd_outputalu_Mxor_Result<18>__xor0000, PC1/outputalu<18>, Madd_outputalu_Mxor_Result<18>_Mxor__xor0000/Data<1>, PC1/outadd<18>8, Madd_outputsada_Mxor_Result<18>/Result, PC1/outputsada<18>, PC1/outadd<18>9, PC1/outadd<18>2, Data<0>, MainModule/PCOut<18>, PC1/inadd<18>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<17>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/outputalu<17>, Data<0>, PC1/outadd<17>8, Madd_outputsada_Mxor_Result<17>/Result, PC1/inadd<17>, PC1/Madd_outputalu_Mxor_Result<17>__xor0000, Madd_outputalu_Mxor_Result<17>_Mxor__xor0000/Result, PC1/outputsada<17>, Madd_outputsada_Mxor_Result<17>/Data<1>, Result, PC1/outadd<17>9, Madd_outputalu_Mxor_Result<17>_Mxor__xor0000/Data<1>, PC1/outadd<17>, MainModule/PCOut<17>, PC1/outadd<17>7, PC1/outadd<17>2.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<16>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/outadd<16>9, PC1/outputalu<16>, Madd_outputsada_Mxor_Result<16>/Data<1>, PC1/outadd<16>7, Madd_outputalu_Mxor_Result<16>_Mxor__xor0000/Data<1>, Data<0>, PC1/outadd<16>2, Madd_outputalu_Mxor_Result<16>_Mxor__xor0000/Result, MainModule/PCOut<16>, Madd_outputsada_Mxor_Result<16>/Result, PC1/outadd<16>, PC1/outadd<16>8, PC1/inadd<16>, PC1/Madd_outputalu_Mxor_Result<16>__xor0000, PC1/outputsada<16>, Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<15>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/outputalu<15>, Madd_outputalu_Mxor_Result<15>_Mxor__xor0000/Data<1>, Madd_outputalu_Mxor_Result<15>_Mxor__xor0000/Result, Result, PC1/outadd<15>, PC1/outadd<15>2, Madd_outputsada_Mxor_Result<15>/Data<1>, MainModule/PCOut<15>, PC1/outadd<15>7, Data<0>, PC1/inadd<15>, PC1/outputsada<15>, PC1/outadd<15>8, Madd_outputsada_Mxor_Result<15>/Result, PC1/outadd<15>9, PC1/Madd_outputalu_Mxor_Result<15>__xor0000.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<14>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/Madd_outputalu_Mxor_Result<14>__xor0000, Madd_outputalu_Mxor_Result<14>_Mxor__xor0000/Data<1>, PC1/outadd<14>8, PC1/inadd<14>, Madd_outputsada_Mxor_Result<14>/Data<1>, MainModule/PCOut<14>, Madd_outputsada_Mxor_Result<14>/Result, PC1/outadd<14>7, PC1/outadd<14>, PC1/outadd<14>2, Result, Madd_outputalu_Mxor_Result<14>_Mxor__xor0000/Result, Data<0>, PC1/outputsada<14>, PC1/outputalu<14>, PC1/outadd<14>9.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<13>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputalu_Mxor_Result<13>_Mxor__xor0000/Result, MainModule/PCOut<13>, PC1/outputsada<13>, PC1/outputalu<13>, PC1/outadd<13>8, PC1/inadd<13>, Result, PC1/Madd_outputalu_Mxor_Result<13>__xor0000, PC1/outadd<13>7, PC1/outadd<13>9, Madd_outputalu_Mxor_Result<13>_Mxor__xor0000/Data<1>, Data<0>, Madd_outputsada_Mxor_Result<13>/Data<1>, Madd_outputsada_Mxor_Result<13>/Result, PC1/outadd<13>2, PC1/outadd<13>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<12>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/Madd_outputalu_Mxor_Result<12>__xor0000, PC1/outputsada<12>, PC1/outadd<12>8, PC1/outputalu<12>, Madd_outputalu_Mxor_Result<12>_Mxor__xor0000/Data<1>, Madd_outputsada_Mxor_Result<12>/Data<1>, Madd_outputsada_Mxor_Result<12>/Result, PC1/outadd<12>, MainModule/PCOut<12>, Madd_outputalu_Mxor_Result<12>_Mxor__xor0000/Result, Data<0>, PC1/outadd<12>9, PC1/outadd<12>2, Result, PC1/outadd<12>7, PC1/inadd<12>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<11>_Mxor_Result : the following signal(s) form a combinatorial loop: Result, Madd_outputsada_Mxor_Result<11>/Data<1>, Madd_outputalu_Mxor_Result<11>_Mxor__xor0000/Data<1>, PC1/outadd<11>9, PC1/outputalu<11>, PC1/outadd<11>2, PC1/inadd<11>, Data<0>, PC1/outputsada<11>, Madd_outputsada_Mxor_Result<11>/Result, MainModule/PCOut<11>, PC1/outadd<11>7, Madd_outputalu_Mxor_Result<11>_Mxor__xor0000/Result, PC1/Madd_outputalu_Mxor_Result<11>__xor0000, PC1/outadd<11>8, PC1/outadd<11>.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<10>_Mxor_Result : the following signal(s) form a combinatorial loop: Data<0>, PC1/outadd<10>9, Madd_outputsada_Mxor_Result<10>/Result, PC1/outadd<10>2, Result, PC1/inadd<10>, PC1/outadd<10>7, Madd_outputsada_Mxor_Result<10>/Data<1>, PC1/outputalu<10>, PC1/Madd_outputalu_Mxor_Result<10>__xor0000, MainModule/PCOut<10>, PC1/outadd<10>, Madd_outputalu_Mxor_Result<10>_Mxor__xor0000/Data<1>, PC1/outadd<10>8, PC1/outputsada<10>, Madd_outputalu_Mxor_Result<10>_Mxor__xor0000/Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<9>_Mxor_Result : the following signal(s) form a combinatorial loop: PC1/outadd<9>7, MainModule/PCOut<9>, Madd_outputsada_Mxor_Result<9>/Result, Madd_outputsada_Mxor_Result<9>/Data<1>, PC1/outadd<9>9, PC1/outputsada<9>, PC1/outadd<9>2, PC1/inadd<9>, PC1/Madd_outputalu_Mxor_Result<9>__xor0000, PC1/outadd<9>, PC1/outputalu<9>, Madd_outputalu_Mxor_Result<9>_Mxor__xor0000/Data<1>, PC1/outadd<9>8, Data<0>, Result, Madd_outputalu_Mxor_Result<9>_Mxor__xor0000/Result.
+WARNING:Xst:2170 - Unit Madd_outputalu_Mxor_Result<1>_Mxor_Result : the following signal(s) form a combinatorial loop: Madd_outputalu_Mxor_Result<1>_Mxor__xor0000/Result, Result, PC1/outadd<1>, PC1/outputalu<1>, MainModule/PCOut<1>, PC1/outadd<1>1, PC1/inadd<1>, PC1/Madd_outputalu_Mxor_Result<1>__xor0000, PC1/outadd<1>6.
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MainModule.ngr
+Top Level Output File Name         : MainModule
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 162
+
+Cell Usage :
+# BELS                             : 15953
+#      AND2                        : 7527
+#      AND3                        : 204
+#      AND4                        : 126
+#      AND5                        : 19
+#      AND7                        : 15
+#      AND8                        : 181
+#      GND                         : 2
+#      INV                         : 4838
+#      OR2                         : 2515
+#      OR3                         : 12
+#      OR4                         : 64
+#      OR8                         : 256
+#      XOR2                        : 194
+# FlipFlops/Latches                : 3235
+#      FD                          : 91
+#      FDCE                        : 3068
+#      FDPE                        : 4
+#      LD                          : 40
+#      LDCP                        : 32
+# Tri-States                       : 32
+#      BUFE                        : 32
+# IO Buffers                       : 162
+#      IBUF                        : 2
+#      OBUF                        : 128
+#      OBUFE                       : 32
+=========================================================================
+
+
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 25.05 secs
+ 
+--> 
+
+Total memory usage is 390032 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   66 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+

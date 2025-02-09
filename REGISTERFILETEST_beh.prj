@@ -1,0 +1,2 @@
+vhdl work "REGISTERFILE.vhd"
+vhdl work "REGISTERFILETEST.vhd"
