@@ -1,0 +1,28 @@
+Command line:
+   pctest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62469
+
+Tue May 17 01:20:50 2022
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 861.802 Meg
+
+ Total Signals          : 25
+ Total Nets             : 327
+ Total Signal Drivers   : 16
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 3
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 829
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 861.802 Meg
+
+Tue May 17 01:21:13 2022
+
