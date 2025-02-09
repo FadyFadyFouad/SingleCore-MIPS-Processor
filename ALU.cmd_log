@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/ALU.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/ALU.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/ALU.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.xst" -ofn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.syr" 
+xst -intstyle ise -ifn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.xst" -ofn "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.syr" 

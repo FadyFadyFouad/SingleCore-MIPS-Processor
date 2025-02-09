@@ -1,0 +1,247 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: INSTRMEMORY.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "INSTRMEMORY.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "INSTRMEMORY"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : INSTRMEMORY
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd" in Library work.
+Architecture behavioral of Entity instrmemory is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <INSTRMEMORY> in library <work> (architecture <behavioral>) with generics.
+	addresssize = 32
+	words = 64
+	wordsize = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <INSTRMEMORY> in library <work> (Architecture <behavioral>).
+	addresssize = 32
+	words = 64
+	wordsize = 32
+WARNING:Xst:790 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd" line 74: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:819 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd" line 25: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <LoadIt>
+INFO:Xst:2679 - Register <MEMORY_0$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000000000100000000100101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_1$mux0000> in unit <INSTRMEMORY> has a constant value of 10001100000011010000000000110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_2$mux0000> in unit <INSTRMEMORY> has a constant value of 10001100000110000000000000110100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_3$mux0000> in unit <INSTRMEMORY> has a constant value of 10001100000110010000000000111000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_4$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000110000101000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_5$mux0000> in unit <INSTRMEMORY> has a constant value of 10101101000010100000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_6$mux0000> in unit <INSTRMEMORY> has a constant value of 10101101000010100000000000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_7$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001101110000100100000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_8$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001001110000100100000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_9$mux0000> in unit <INSTRMEMORY> has a constant value of 10001101000010110000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_10$mux0000> in unit <INSTRMEMORY> has a constant value of 10001101000011000000000000000100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_11$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001011011000101000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_12$mux0000> in unit <INSTRMEMORY> has a constant value of 10101101000010100000000000001000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_13$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000110010100000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_14$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001001110000100100000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_15$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000010010000100000101010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_16$mux0000> in unit <INSTRMEMORY> has a constant value of 00010000001000000000000000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_17$mux0000> in unit <INSTRMEMORY> has a constant value of 00001000000000000000000000001001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_18$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000001000010000000100100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_19$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000011010010100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_20$mux0000> in unit <INSTRMEMORY> has a constant value of 00001000000000000000000000010110 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_21$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000110001000000000100010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_22$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000000000100000000100100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_23$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000010000100100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_24$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001001010010100100000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_25$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000100010010101000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_26$mux0000> in unit <INSTRMEMORY> has a constant value of 10001101010100000000000000000000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_27$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000110000100000000100000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_28$mux0000> in unit <INSTRMEMORY> has a constant value of 00000001000001010000100000101010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_29$mux0000> in unit <INSTRMEMORY> has a constant value of 00010100001000001111111111111001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_30$mux0000> in unit <INSTRMEMORY> has a constant value of 00000000000000001100000000100111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_31$mux0000> in unit <INSTRMEMORY> has a constant value of 00000010000110001000000000100111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <MEMORY_32$mux0000> in unit <INSTRMEMORY> has a constant value of 00001000000000000000000000010101 during circuit operation. The register is replaced by logic.
+Entity <INSTRMEMORY> analyzed. Unit <INSTRMEMORY> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <INSTRMEMORY>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstMem.vhd".
+WARNING:Xst:647 - Input <ADDRESS<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <LoadIt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <MEMORY<0:32>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1781 - Signal <MEMORY<33:63>> is used but never assigned. Tied to default value.
+    Found 64x32-bit ROM for signal <DATA$mux0000> created at line 74.
+    Found 32-bit register for signal <DATA>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <INSTRMEMORY> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DATA_30> (without init value) has a constant value of 0 in block <INSTRMEMORY>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DATA_10> in Unit <INSTRMEMORY> is equivalent to the following 4 FFs/Latches, which will be removed : <DATA_9> <DATA_8> <DATA_7> <DATA_6> 
+
+Optimizing unit <INSTRMEMORY> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : INSTRMEMORY.ngr
+Top Level Output File Name         : INSTRMEMORY
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 66
+
+Cell Usage :
+# BELS                             : 490
+#      AND2                        : 150
+#      AND3                        : 40
+#      AND4                        : 6
+#      AND5                        : 2
+#      GND                         : 1
+#      INV                         : 198
+#      OR2                         : 78
+#      OR3                         : 6
+#      XOR2                        : 9
+# FlipFlops/Latches                : 27
+#      FD                          : 27
+# IO Buffers                       : 39
+#      IBUF                        : 7
+#      OBUF                        : 32
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.73 secs
+ 
+--> 
+
+Total memory usage is 226896 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :   34 (   0 filtered)
+

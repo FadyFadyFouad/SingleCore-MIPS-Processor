@@ -1,0 +1,260 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : Automotive 9500XL
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Yes
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Verilog 2001                       : YES
+
+---- Other Options
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALUPACK.vhd" in Library work.
+Architecture alupack of Entity alupack is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1.vhd" in Library work.
+Architecture behavioral of Entity mux2x1 is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/FULLADDER.vhd" in Library work.
+Architecture behavioral of Entity fulladder is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX16X1.vhd" in Library work.
+Architecture behavioral of Entity mux16x1 is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU1BIT.vhd" in Library work.
+Architecture behavioral of Entity alu1bit is up to date.
+Compiling vhdl file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.vhd" in Library work.
+Architecture behavioral of Entity alu is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ALU1BIT> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX2X1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FULLADDER> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <MUX16X1> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+Analyzing Entity <ALU1BIT> in library <work> (Architecture <behavioral>).
+Entity <ALU1BIT> analyzed. Unit <ALU1BIT> generated.
+
+Analyzing Entity <MUX2X1> in library <work> (Architecture <behavioral>).
+Entity <MUX2X1> analyzed. Unit <MUX2X1> generated.
+
+Analyzing Entity <FULLADDER> in library <work> (Architecture <behavioral>).
+Entity <FULLADDER> analyzed. Unit <FULLADDER> generated.
+
+Analyzing Entity <MUX16X1> in library <work> (Architecture <behavioral>).
+Entity <MUX16X1> analyzed. Unit <MUX16X1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MUX2X1>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1.vhd".
+Unit <MUX2X1> synthesized.
+
+
+Synthesizing Unit <FULLADDER>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/FULLADDER.vhd".
+    Found 1-bit xor3 for signal <O>.
+Unit <FULLADDER> synthesized.
+
+
+Synthesizing Unit <MUX16X1>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX16X1.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <O>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <MUX16X1> synthesized.
+
+
+Synthesizing Unit <ALU1BIT>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU1BIT.vhd".
+Unit <ALU1BIT> synthesized.
+
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.vhd".
+WARNING:Xst:647 - Input <cin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit xor2 for signal <oflag>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <ALU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Xors                                                 : 33
+ 1-bit xor2                                            : 1
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 32
+ 1-bit latch                                           : 32
+# Xors                                                 : 32
+ 1-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <MUX2X1> ...
+
+Optimizing unit <MUX16X1> ...
+
+Optimizing unit <FULLADDER> ...
+
+Optimizing unit <ALU1BIT> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 135
+
+Cell Usage :
+# BELS                             : 1803
+#      AND2                        : 675
+#      AND3                        : 96
+#      AND4                        : 1
+#      AND8                        : 4
+#      INV                         : 642
+#      OR2                         : 288
+#      XOR2                        : 97
+# FlipFlops/Latches                : 32
+#      LD                          : 32
+# IO Buffers                       : 103
+#      IBUF                        : 68
+#      OBUF                        : 35
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.62 secs
+ 
+--> 
+
+Total memory usage is 231440 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

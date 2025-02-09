@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/FULLADDER.xst" -ofn "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/FULLADDER.syr" 

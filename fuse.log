@@ -1,0 +1,62 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/maintest_isim_beh.exe" -prj "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/maintest_beh.prj" "work.maintest" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX16X1.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/FULLADDER.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALUPACK.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MainModulePack.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU1BIT.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/SignExtender.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/REGISTERFILE.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/PC.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/mux32bits.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MUX2X1MAIN.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/InstructionMEM.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/DataMem.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/Control.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALUcontrol.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/ALU.vhd" into library work
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MainModule.vhd" into library work
+WARNING:HDLCompiler:946 - "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/MainModule.vhd" Line 40: Actual for formal port inadd is neither a static name nor a globally static expression
+Parsing VHDL file "C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/maintest.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 161532 KB
+Fuse CPU Usage: 452 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package mainmodulepack
+Compiling package std_logic_signed
+Compiling package math_real
+Compiling package textio
+Compiling package std_logic_textio
+Compiling architecture behavioral of entity PC [pc_default]
+Compiling architecture behavioral of entity InstructionMEM [instructionmem_default]
+Compiling architecture behavioral of entity Control [control_default]
+Compiling architecture behavioral of entity ALUcontrol [alucontrol_default]
+Compiling architecture behavioral of entity mux32bits [mux32bits_default]
+Compiling package alupack
+Compiling architecture behavioral of entity MUX2X1 [mux2x1_default]
+Compiling architecture behavioral of entity FULLADDER [fulladder_default]
+Compiling architecture behavioral of entity MUX16X1 [mux16x1_default]
+Compiling architecture behavioral of entity ALU1BIT [alu1bit_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity DATAMEMORY [\DATAMEMORY(64,32,32)\]
+Compiling architecture behavioral of entity SignExtender [signextender_default]
+Compiling architecture behavioral of entity MUX2X1MAIN [mux2x1main_default]
+Compiling architecture behavioral of entity REGISTERFILE [registerfile_default]
+Compiling architecture behavioral of entity MainModule [mainmodule_default]
+WARNING:HDLCompiler:1242 - "N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2479: Warning: "There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es)."
+Compiling architecture behavior of entity maintest
+Time Resolution for simulation is 1ps.
+Waiting for 10 sub-compilation(s) to finish...
+Compiled 42 VHDL Units
+Built simulation executable C:/Users/karim/OneDrive/Desktop/PHASE 1 COMPUTER ARCHITECTURE FINAL/PHASE11/maintest_isim_beh.exe
+Fuse Memory Usage: 197244 KB
+Fuse CPU Usage: 796 ms

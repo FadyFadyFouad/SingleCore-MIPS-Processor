@@ -1,0 +1,6 @@
+vhdl isim_temp "MUX2X1.vhd"
+vhdl isim_temp "MUX16X1.vhd"
+vhdl isim_temp "FULLADDER.vhd"
+vhdl isim_temp "ALUPACK.vhd"
+vhdl isim_temp "ALU1BIT.vhd"
+vhdl isim_temp "ALU.vhd"

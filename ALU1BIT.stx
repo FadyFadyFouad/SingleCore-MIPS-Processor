@@ -1,0 +1,43 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/ALUPACK.vhd" in Library work.
+Architecture alupack of Entity alupack is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/MUX2X1.vhd" in Library work.
+Architecture behavioral of Entity mux2x1 is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/FULLADDER.vhd" in Library work.
+Architecture behavioral of Entity fulladder is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/MUX16X1.vhd" in Library work.
+Architecture behavioral of Entity mux16x1 is up to date.
+Compiling vhdl file "C:/Xilinx/14.7/ISE_DS/ISE/D/PHASE11/ALU1BIT.vhd" in Library work.
+Entity <alu1bit> compiled.
+Entity <alu1bit> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.37 secs
+ 
+--> 
+
+Total memory usage is 213240 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

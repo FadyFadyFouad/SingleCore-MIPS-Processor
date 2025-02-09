@@ -1,0 +1,6 @@
+vhdl work "MUX2X1.vhd"
+vhdl work "MUX16X1.vhd"
+vhdl work "FULLADDER.vhd"
+vhdl work "ALUPACK.vhd"
+vhdl work "ALU1BIT.vhd"
+vhdl work "ALU.vhd"
